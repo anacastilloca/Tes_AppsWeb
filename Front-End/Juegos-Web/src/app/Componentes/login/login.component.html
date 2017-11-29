@@ -1,0 +1,41 @@
+<div class="container">
+  <h2 class="titulo">Iniciar Sesión</h2><br>
+  <div class="row" >
+    <div class="col-sm-3"></div>
+    <div id="loginBody" class="col-sm-6">
+      <br>
+      <label class="labelLogin">Modo: </label>
+      <select [(ngModel)]="usersSeleccionado" name="usersSeleccionado" class="inpuLogin" (change)="onChange(usersSeleccionado)">
+        <option *ngFor="let user of tipoUsers" [value]="user.rol">
+          {{user.rol}}
+        </option>
+      </select>
+      {{usersSeleccionado}}
+      <br>
+      <label class="labelLogin">Usuario:</label>
+      <input class="inpuLogin" maxlength="13" minlength="10"
+             type="text" name="user" [(ngModel)]="ruc_cedula" #user="ngModel" placeholder="Cédula o RUC " />
+
+      <div *ngIf="user.errors?.minlength&&user.touched==true" class="alert alert-warning animated bounceIn" role="alert">
+        <strong>¡Cuidado!</strong> La cédula tiene 10 dígitos y el ruc 13.
+      </div>
+      <br>
+      <label class="labelLogin">Contraseña: </label>
+      <input class="inpuLogin" minlength="5" maxlength="16"
+             type="password" name="password" [(ngModel)]="contrasenia" placeholder="Contraseña"/>
+      <br><br>
+      <a id="btnIngreso" class="btn btn-primary" role="button" (click)="ingresarUsuario()" >Ingresar</a>
+      <br><br>
+
+      <div *ngIf="">
+
+      </div>
+
+    </div>
+    <div class="col-sm-3"> </div>
+  </div>
+</div>
+
+
+
+

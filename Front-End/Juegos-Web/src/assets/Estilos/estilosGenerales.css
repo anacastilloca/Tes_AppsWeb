@@ -1,56 +1,14 @@
 body{
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  margin: 0 2% 0 2%;
-  background: #E4DEF9;
-  color: white;
+  background: #EBF2DC;
 }
 
-header{
-  background: #ADA1E6;
+.titulo{
+  margin-top: 4%;
   text-align: center;
-  color: #1E1A2D;
-  padding: 1% 1% 1% 1%;
-}
-
-#titulo-Encabezado{
-  font-size: 380% !important;
   text-transform: uppercase;
-  margin: 10%  12% 0 4%;
-  position: relative;
-  /* Safari 4.0 - 8.0 */
-  -webkit-animation: titulo 12s linear 2s infinite alternate;
-  /* Standard syntax */
-  animation: titulo 12s linear 2s infinite alternate;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes titulo {
-  0%   {color:#1E1A2D; left:0; top:0;}
-  50%  {color:#524F7D; left:15%; top:0;}
-  100% {color:#1E1A2D; left:0; top:0;}
-}
-
-/* Standard syntax */
-@keyframes titulo {
-  0%   {color:#1E1A2D; left:0; top:0;}
-  50%  {color:#524F7D; left:15%; top:0;}
-  100% {color:#1E1A2D; left:0; top:0;}
-}
-
-#img-Encabezado{
-  width: 75%;
-  height:60%;
-}
-section{
-  color: black;
-  font-size: 160%;
-}
-
-footer{
-  padding: 1% 2% 1% 2%;
-  margin-top: 30%;
-  background: #605399;
-  font-size: 140%;
+  font-size: 250%;
+  font-weight: bold;
 }
 
 

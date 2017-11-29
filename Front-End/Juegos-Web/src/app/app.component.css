@@ -1,0 +1,50 @@
+#img-Encabezado{
+  width: 60%;
+  height:50%;
+  margin: 2% 0 3% 0;
+}
+
+#titulo-Encabezado{
+  font-size: 380%;
+  text-transform: uppercase;
+  margin: 8% 10% 0 0;
+  position: relative;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation: titulo 12s linear 2s infinite alternate;
+  /* Standard syntax */
+  animation: titulo 12s linear 2s infinite alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes titulo {
+  0%   {color:#1E1A2D; left:0; top:0;}
+  50%  {color:#524F7D; left:12%; top:0;}
+  100% {color:#1E1A2D; left:0; top:0;}
+}
+
+/* Standard syntax */
+@keyframes titulo {
+  0%   {color:#1E1A2D; left:0; top:0;}
+  50%  {color:#524F7D; left:15%; top:0;}
+  100% {color:#1E1A2D; left:0; top:0;}
+}
+
+
+header{
+  background-image: linear-gradient(#BFB78E,#EBF2DC,#BFB78E);
+  text-align: center;
+  color: #1E1A2D;
+}
+
+
+section{
+
+}
+
+footer{
+  padding: 0 2% 0 2%;
+  color: white;
+  margin-top: 15%;
+  background: #4C0013;
+  font-size: 100%;
+}
