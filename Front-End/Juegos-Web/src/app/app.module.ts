@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
+import { HttpModule } from "@angular/http";
 import {rutas, appRoutingProviders} from "./app.rutas";
 
 //Componentes
@@ -12,18 +13,22 @@ import {UrlPrincipalService} from "./Servicios/url-principal.service";
 import {AuthOrganizacionService} from "./Servicios/Autenticacion/auth-organizacion.service";
 import {AuthTerapeutaService} from "./Servicios/Autenticacion/auth-terapeuta.service";
 import {AuthEstudianteService} from "./Servicios/Autenticacion/auth-estudiante.service";
-import { AdmPrincipalComponent } from './Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component';
+
+//Importar los modulos
+import {AdmModule} from "./Componentes/Gestion_Usuarios(Org)/adm-principal/adm.module";
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    AdmPrincipalComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     rutas,
+    AdmModule
   ],
   providers: [
     appRoutingProviders,

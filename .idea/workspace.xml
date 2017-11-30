@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b388561-8114-4f42-8286-ab2e199f0631" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/ComunicacionAlternativaClass.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/EstudianteClass.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/Estudiante_CAClass.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/Estudiante_SAClass.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/OrganizacionClass.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/SecuenaAccionesClass.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/TerapeutaClass.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-rutas.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm.module.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/SecuenaAccionesClass.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/SecuenciaAccionesClass.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.html" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.css" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.html" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.css" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.html" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.module.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.rutas.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.rutas.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,7 +27,31 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="adm-rutas.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-rutas.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#112#176#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adm-principal.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,17 +80,10 @@
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/index.html" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/rutas.ts" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.rutas.ts" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.css" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.html" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/url-principal.service.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-estudiante.service.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-organizacion.service.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-terapeuta.service.ts" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/OrganizacionClass.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/EstudianteClass.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/TerapeutaClass.ts" />
@@ -72,6 +91,18 @@
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/ComunicacionAlternativaClass.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/Estudiante_CAClass.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/Estudiante_SAClass.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/SecuenciaAccionesClass.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.rutas.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.html" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.css" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.html" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.css" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm.module.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-rutas.module.ts" />
       </list>
     </option>
   </component>
@@ -84,7 +115,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/Front-End/Juegos-Web/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="814" />
     <option name="height" value="867" />
@@ -163,7 +194,9 @@
               <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Servicios" type="462c0819:PsiDirectoryNode" />
+              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
+              <item name="Gestion_Usuarios(Org)" type="462c0819:PsiDirectoryNode" />
+              <item name="adm-principal" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,25 +249,24 @@
       <workItem from="1511895724882" duration="98000" />
       <workItem from="1511896849674" duration="12299000" />
       <workItem from="1511968445579" duration="17410000" />
-      <workItem from="1512055875697" duration="7232000" />
+      <workItem from="1512055875697" duration="16872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41870000" />
+    <option name="totallyTimeSpent" value="51510000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.255625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.255625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3616188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3616188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -290,6 +322,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -344,37 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/url-principal.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -413,44 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.rutas.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#58#0" expanded="false" />
-            <element signature="e#218#265#0" expanded="false" />
-            <element signature="e#349#419#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/OrganizacionClass.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -475,14 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/SecuenaAccionesClass.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/ComunicacionAlternativaClass.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -503,6 +459,124 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/SecuenciaAccionesClass.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="84" column="14" lean-forward="false" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.rutas.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#258#322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#262#309#0" expanded="true" />
+            <element signature="e#393#463#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-rutas.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#112#176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
           <folding />
         </state>
       </provider>

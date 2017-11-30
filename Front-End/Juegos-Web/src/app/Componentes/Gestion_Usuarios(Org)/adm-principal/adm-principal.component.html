@@ -1,3 +1,43 @@
-<p>
-  adm-principal works!
-</p>
+<div class="navegation col-sm-12">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a [routerLink]="['terapeuta']" class="navbar-brand">ADMIN</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li>
+          <a [routerLink]="['terapeuta']" [routerLinkActive]="['active']">
+            <span class="glyphicon glyphicon-education"></span>
+            Terapeuta
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['estudiante']" [routerLinkActive]="['active']" >
+            <span class="glyphicon glyphicon-star"></span>
+            Estudiante
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a>
+            <span class="glyphicon glyphicon-user"> </span>
+            {{nombreOrganizacion}}
+          </a>
+        </li>
+
+        <li>
+          <a role="button" (click)="desLogearse()" [routerLink]="['/']">
+            <span class="glyphicon glyphicon-lock"></span>
+            Salir
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+</div>
+<!--Para la Gestión de Usuario-->
+<router-outlet></router-outlet>
+

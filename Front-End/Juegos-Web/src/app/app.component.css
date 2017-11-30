@@ -42,15 +42,21 @@ header{
   color: #1E1A2D;
 }
 
+.btn-default {
+  background-color: #0A3566;
+  color: white;
+  border: 1px solid #0A2E57;
+}
 
-section{
-
+.btn-default:hover {
+  background-color: #061C37;
+  color: white;
 }
 
 footer{
   padding: 0 2% 0 2%;
   color: white;
-  margin-top: 15%;
+  margin-top: 6%;
   background: #4C0013;
   font-size: 100%;
 }

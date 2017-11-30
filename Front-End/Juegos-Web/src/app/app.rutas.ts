@@ -11,8 +11,6 @@ const appRoutes:Routes = [
   { path: 'login', component: LoginComponent },
 
   //{ path:'**',component: LoginComponent  }
-
-
 ]
 
 export const appRoutingProviders: any[]=[];

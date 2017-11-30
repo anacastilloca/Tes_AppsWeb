@@ -1,4 +1,4 @@
-export class SecuenaAccionesClass{
+export class SecuenciaAccionesClass{
   constructor(
     public nombre?:string,
     public imagen1?:string,

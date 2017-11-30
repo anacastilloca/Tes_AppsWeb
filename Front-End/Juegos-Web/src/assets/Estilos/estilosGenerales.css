@@ -4,11 +4,39 @@ body{
 }
 
 .titulo{
-  margin-top: 4%;
+  margin-top: 3%;
   text-align: center;
   text-transform: uppercase;
-  font-size: 250%;
+  font-size: 350%;
   font-weight: bold;
+  color: black;
+}
+
+.lbl{
+  background: #575757;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 8px 0px 8px 0px;
+  width: 40%;
+  margin: 14px 0 0 0;
+  border: 1px solid;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.inp{
+  font-size: 18px;
+  padding: 8px 0 8px 0px;
+  width: 50%;
+  margin: 14px 0 0 0;
+  border: 1px solid;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.btn{
+  margin: 3% 0 5% 0;
+  font-size: 16px;
 }
 
 
