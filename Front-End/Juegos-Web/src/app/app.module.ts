@@ -7,11 +7,18 @@ import {rutas, appRoutingProviders} from "./app.rutas";
 import { AppComponent } from './app.component';
 import { LoginComponent } from './Componentes/login/login.component';
 
+//Servicios
+import {UrlPrincipalService} from "./Servicios/url-principal.service";
+import {AuthOrganizacionService} from "./Servicios/Autenticacion/auth-organizacion.service";
+import {AuthTerapeutaService} from "./Servicios/Autenticacion/auth-terapeuta.service";
+import {AuthEstudianteService} from "./Servicios/Autenticacion/auth-estudiante.service";
+import { AdmPrincipalComponent } from './Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    AdmPrincipalComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +27,10 @@ import { LoginComponent } from './Componentes/login/login.component';
   ],
   providers: [
     appRoutingProviders,
+    UrlPrincipalService,
+    AuthOrganizacionService,
+    AuthTerapeutaService,
+    AuthEstudianteService,
   ],
   bootstrap: [AppComponent]
 })

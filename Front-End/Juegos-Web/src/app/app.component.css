@@ -5,25 +5,31 @@
 }
 
 #titulo-Encabezado{
-  font-size: 380%;
+  font-size: 350%;
   text-transform: uppercase;
-  margin: 8% 10% 0 0;
+  margin: 6% 10% 0 0;
+
+}
+
+#subtitulo-Encabezado{
+  font-size: 120%;
+  margin: 2% 25% 0 0;
   position: relative;
   /* Safari 4.0 - 8.0 */
-  -webkit-animation: titulo 12s linear 2s infinite alternate;
+  -webkit-animation: subtitulo 12s linear 2s infinite alternate;
   /* Standard syntax */
-  animation: titulo 12s linear 2s infinite alternate;
+  animation: subtitulo 15s linear 2s infinite alternate;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes titulo {
+@-webkit-keyframes subtitulo {
   0%   {color:#1E1A2D; left:0; top:0;}
-  50%  {color:#524F7D; left:12%; top:0;}
+  50%  {color:#524F7D; left:20%; top:0;}
   100% {color:#1E1A2D; left:0; top:0;}
 }
 
 /* Standard syntax */
-@keyframes titulo {
+@keyframes subtitulo {
   0%   {color:#1E1A2D; left:0; top:0;}
   50%  {color:#524F7D; left:15%; top:0;}
   100% {color:#1E1A2D; left:0; top:0;}
