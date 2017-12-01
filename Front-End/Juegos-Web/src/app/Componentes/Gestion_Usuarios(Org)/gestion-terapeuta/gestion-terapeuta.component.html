@@ -1,26 +1,24 @@
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-11">
       <h1 class="titulo">Gestión de datos del Terapeuta</h1>
     </div>
   </div>
   <div class="row " id="cuerpoGestionDatos">
-    <div class="col-sm-6">
-      <label class="lbl">Nombre:</label>
-      <input class="inp" maxlength="30" type="text" name="buscarTerapeuta"
-             [(ngModel)]="busquedaPorNombre" #buscarTerapeuta="ngModel" placeholder="Nombre del Terapeuta " />
-    </div>
-    <div class="col-sm-3">
-      <button  class="btn btn-primary">
+    <div class="col-sm-12">
+      <label class="lblBusqueda">Nombre:</label>
+      <input class="inpBusqueda" type="text" name="buscarTerapeuta"
+             [(ngModel)]="busquedaPorNombre" #buscarTerapeuta="ngModel" placeholder="Nombre del terapeuta" />
+      <button id="btnBuscar" class="btn btn-primary">
         <span class="glyphicon glyphicon-search"></span>
         Buscar
       </button>
-    </div>
-    <div class="col-sm-3">
-      <button class="btn btn-success pull-right" data-toggle="modal" data-target="#agregarModal">
+
+      <button id="btnAgregar" class="btn btn-success pull-right" data-toggle="modal" data-target="#agregarModal">
         <span class="glyphicon glyphicon-plus"> </span>
         Agregar
       </button>
     </div>
+
     <!--<app-agregar-pop-up (actualizacionTablaTerapeutas)="presentacionActualizadaAgregar($event)" > </app-agregar-pop-up>-->
   </div>
 

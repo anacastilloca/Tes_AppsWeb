@@ -14,7 +14,7 @@ body{
 
 .lbl{
   background: #575757;
-  font-size: 18px;
+  font-size: 130%;
   color: #ffffff;
   padding: 8px 0px 8px 0px;
   width: 40%;
@@ -35,13 +35,12 @@ body{
 }
 
 .btn{
-  margin: 3% 0 5% 0;
+  margin: 4% 0 5% 0;
   font-size: 16px;
 }
 
 #cuerpoGestionDatos{
-  margin: 1% 10% 2% 10%;
-  text-align: center;
+  margin: 0 10% 2% 10%;
 }
 
 .tablaGestionDastos{
@@ -49,6 +48,26 @@ body{
   height: 600px;
   overflow-y: auto;
   font-size: 100%;
+}
+.lblBusqueda{
+  background: #575757;
+  font-size: 130%;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 0px 8px 0px;
+  width: 25%;
+  border: 1px solid;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.inpBusqueda{
+  font-size: 130%;
+  padding: 8px 0 8px 0;
+  width: 30%;
+  border: 1px solid;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 
