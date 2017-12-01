@@ -25,8 +25,8 @@ body{
 }
 
 .inp{
-  font-size: 18px;
-  padding: 8px 0 8px 0px;
+  font-size: 130%;
+  padding: 8px 0 8px 0;
   width: 50%;
   margin: 14px 0 0 0;
   border: 1px solid;
@@ -38,5 +38,18 @@ body{
   margin: 3% 0 5% 0;
   font-size: 16px;
 }
+
+#cuerpoGestionDatos{
+  margin: 1% 10% 2% 10%;
+  text-align: center;
+}
+
+.tablaGestionDastos{
+  margin: 1% 10% 2% 10%;
+  height: 600px;
+  overflow-y: auto;
+  font-size: 100%;
+}
+
 
 

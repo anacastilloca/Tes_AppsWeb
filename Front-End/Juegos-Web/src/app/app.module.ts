@@ -13,10 +13,12 @@ import {UrlPrincipalService} from "./Servicios/url-principal.service";
 import {AuthOrganizacionService} from "./Servicios/Autenticacion/auth-organizacion.service";
 import {AuthTerapeutaService} from "./Servicios/Autenticacion/auth-terapeuta.service";
 import {AuthEstudianteService} from "./Servicios/Autenticacion/auth-estudiante.service";
+import {TokenService} from "./Componentes/login/Token/token.service";
+
+
 
 //Importar los modulos
 import {AdmModule} from "./Componentes/Gestion_Usuarios(Org)/adm-principal/adm.module";
-
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import {AdmModule} from "./Componentes/Gestion_Usuarios(Org)/adm-principal/adm.m
     AuthOrganizacionService,
     AuthTerapeutaService,
     AuthEstudianteService,
+    TokenService,
   ],
   bootstrap: [AppComponent]
 })

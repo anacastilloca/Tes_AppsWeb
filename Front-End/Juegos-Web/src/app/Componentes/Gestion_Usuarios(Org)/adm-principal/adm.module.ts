@@ -9,12 +9,15 @@ import {AdmPrincipalComponent} from "./adm-principal.component";
 import {GestionTerapeutaComponent} from "../gestion-terapeuta/gestion-terapeuta.component";
 import {GestionEstudianteComponent} from "../gestion-estudiante/gestion-estudiante.component";
 
+//Pipes
+import { BusquedaPipe } from "../../../Pipes/busqueda.pipe";
+
 @NgModule({
   declarations: [
     AdmPrincipalComponent,
     GestionTerapeutaComponent,
-    GestionEstudianteComponent
-
+    GestionEstudianteComponent,
+    BusquedaPipe,
   ],
   imports: [
     BrowserModule,

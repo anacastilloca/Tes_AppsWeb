@@ -23,6 +23,10 @@
 
       <button class="btn btn-primary" (click)="ingresarUsuario()" >Ingresar</button>
 
+      <div *ngIf="!estaLogeado" class="alert alert-danger">
+        El ruc o la contraseña son incorrectos
+      </div>
+
     </div>
     <div class="col-sm-3"> </div>
   </div>

@@ -4,6 +4,7 @@ import {AuthTerapeutaService} from "../../Servicios/Autenticacion/auth-terapeuta
 import {AuthEstudianteService} from "../../Servicios/Autenticacion/auth-estudiante.service";
 import {Router} from "@angular/router";
 import 'rxjs/add/operator/map';
+import {TokenService} from "./Token/token.service";
 
 @Component({
   selector: 'app-login',
@@ -14,19 +15,6 @@ export class LoginComponent implements OnInit {
 
   //**ATRIBUTOS**//
 
-  //id y nombre de la Organización Logeada
-  idOrganizacionLog: string;
-  nombreOrganizacion: string;
-  tokenOrganizacion:string
-
-  //id y nombre del terapeuta Logeado
-  idTerapeutaLog: string;
-  nombreTerapeuta: string;
-
-  //id y nombre del estudiante Logeado
-  idEstudianteLog: string;
-  nombreEstudiante: string;
-
   //Para el llenado del combobox del tipo de usuarios
   usersSeleccionado: string;
   tipoUsers = [{id: 1, rol: 'Administrador'}, {id: 2, rol: 'Terapeuta'}, {id: 3, rol: 'Estudiante'}];
@@ -35,12 +23,13 @@ export class LoginComponent implements OnInit {
   ruc_cedula: string;
   contrasenia: string;
 
-  //Para guardar el mensaje del ingreso erroneo de los datos del usuario
-  mensajeFallidoIngreso:string
+  //Para validar el ingreso del usuario
+  estaLogeado:boolean=true;
 
   constructor(private _authOrganizacion: AuthOrganizacionService,
               private _authTerapeuta: AuthTerapeutaService,
               private _authEstudiante: AuthEstudianteService,
+              private _tokenService:TokenService,
               private _router: Router) {
   }
 
@@ -55,42 +44,36 @@ export class LoginComponent implements OnInit {
 
   //Método para la validación de los datos del usuario, dependiendo el tipo de usuario que sea
   ingresarUsuario(){
-    //console.log(this.usersSeleccionado);
     if(!this.usersSeleccionado.localeCompare("Administrador") ){
-      //console.log("Es administrador");
+      console.log("Es administrador");
       this._authOrganizacion.logIn(this.ruc_cedula,this.contrasenia)
         .map(res => res.json())
         .subscribe(
           token=>{
-            console.log(token);
-            //console.log(token.idOrganizacion);
-            this.idOrganizacionLog=(token.idOrganizacion).toString();
-            this.nombreOrganizacion=token.nombreOrganizacion;
-            localStorage.setItem('idOrganizacionLog',this.idOrganizacionLog);
-            localStorage.setItem('nombreOrganizacion',this.nombreOrganizacion);
+            this._tokenService.token=token.token;
+            this._tokenService.idOTE=token.idOrganizacion.toString();
+            this._tokenService.nombreOTE=token.nombreOrganizacion;
             this._router.navigate(['adm/terapeuta']);
+            this.estaLogeado=true;
           },
           errorServidor=>{
-            this.mensajeFallidoIngreso='El ruc o la contraseña son incorrectos';
-            //alert("El usuario o la contraseña son incorrectos");
-          })
+            this.estaLogeado=false;
 
+          });
     }else if (!this.usersSeleccionado.localeCompare("Terapeuta")){
       //console.log("Es terapeuta");
       this._authTerapeuta.logIn(this.ruc_cedula,this.contrasenia)
         .map(res => res.json())
         .subscribe(
           token=>{
-            //console.log(token);
-            //console.log(token.idTerapeuta);
-            this.idTerapeutaLog=(token.idTerapeuta).toString();
-            this.nombreTerapeuta=token.nombreTerapeuta;
-            localStorage.setItem('idTerapeutaLog',this.idTerapeutaLog);
-            localStorage.setItem('nombreTerapeuta',this.nombreTerapeuta)
+            this._tokenService.token=token.token;
+            this._tokenService.idOTE=token.idTerapeuta.toString();
+            this._tokenService.nombreOTE=token.nombreTerapeuta;
             this._router.navigate(['saca/sa']);
+            this.estaLogeado=true;
           },
           errorServidor=>{
-            this.mensajeFallidoIngreso='La cédula o la contraseña son incorrectos';
+            this.estaLogeado=false;
           })
 
     }else {
@@ -99,20 +82,15 @@ export class LoginComponent implements OnInit {
         .map(res => res.json())
         .subscribe(
           token=>{
-            //console.log(token);
-            //console.log(token.idEstudiante);
-            this.idEstudianteLog=(token.idEstudiante).toString();
-            this.nombreEstudiante=token.nombreEstudiante;
-            localStorage.setItem('idEstudianteLog',this.idEstudianteLog);
-            localStorage.setItem('nombreEstudiante',this.nombreEstudiante)
+            this._tokenService.token=token.token;
+            this._tokenService.idOTE=token.idEstudiante.toString();
+            this._tokenService.nombreOTE=token.nombreEstudiante;
             this._router.navigate(['juegos/saN1']);
+            this.estaLogeado=true;
           },
           errorServidor=>{
-            this.mensajeFallidoIngreso='La cédula o la contraseña son incorrectos';
+            this.estaLogeado=false;
           })
     }
-
   }
-
-
 }

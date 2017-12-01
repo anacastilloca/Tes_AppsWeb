@@ -1,3 +1,62 @@
-<p>
-  gestion-terapeuta works!
-</p>
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="titulo">Gestión de datos del Terapeuta</h1>
+    </div>
+  </div>
+  <div class="row " id="cuerpoGestionDatos">
+    <div class="col-sm-6">
+      <label class="lbl">Nombre:</label>
+      <input class="inp" maxlength="30" type="text" name="buscarTerapeuta"
+             [(ngModel)]="busquedaPorNombre" #buscarTerapeuta="ngModel" placeholder="Nombre del Terapeuta " />
+    </div>
+    <div class="col-sm-3">
+      <button  class="btn btn-primary">
+        <span class="glyphicon glyphicon-search"></span>
+        Buscar
+      </button>
+    </div>
+    <div class="col-sm-3">
+      <button class="btn btn-success pull-right" data-toggle="modal" data-target="#agregarModal">
+        <span class="glyphicon glyphicon-plus"> </span>
+        Agregar
+      </button>
+    </div>
+    <!--<app-agregar-pop-up (actualizacionTablaTerapeutas)="presentacionActualizadaAgregar($event)" > </app-agregar-pop-up>-->
+  </div>
+
+  <div class="tablaGestionDastos">
+    <table class="table table-hover">
+      <thead class="thead-default">
+      <tr>
+        <th>ID</th>
+        <th>Cédula</th>
+        <th>Nombre</th>
+        <th>Celular</th>
+        <th>Acciones</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let tera of terapeutas | busqueda:busquedaPorNombre; let indice=index">
+        <td>{{indice+1}}</td>
+        <td>{{tera.cedula}}</td>
+        <td>{{tera.nombre}}</td>
+        <td>{{tera.celular}}</td>
+        <td>
+          <button class="btn btn-info" data-toggle="modal" (click)="modalVer(indice)" data-target="#verModal">Ver </button>
+
+          <button class="btn btn-warning" data-toggle="modal" (click)="modalEditar(indice)" data-target="#editarModal">
+            <span class="glyphicon glyphicon-pencil"></span>
+          </button>
+
+          <button class="btn btn-danger">
+            <span class="glyphicon glyphicon-trash" data-toggle="modal" (click)="modalEliminar(indice)" data-target="#eliminarModal"></span>
+          </button>
+
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <!--<app-ver-pop-up [terapeuta]="terapeuta" ></app-ver-pop-up>-->
+    <!--<app-editar-pop-up [terapeuta]="terapeuta"></app-editar-pop-up>-->
+    <!--<app-eliminar-pop-up [terapeuta]="terapeuta" (eliminarTerapeutas)="presentacionActualizadaEliminar($event)"></app-eliminar-pop-up>-->
+</div>
