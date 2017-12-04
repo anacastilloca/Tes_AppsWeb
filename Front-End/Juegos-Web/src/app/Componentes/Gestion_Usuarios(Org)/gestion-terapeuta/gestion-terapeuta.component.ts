@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {TerapeutaClass} from "../../../Modelos/TerapeutaClass";
+import {TerapeutaService} from "../Servicios/terapeuta.service";
+import {TokenService} from "../../login/Token/token.service";
 
 @Component({
   selector: 'app-gestion-terapeuta',
@@ -17,9 +19,24 @@ export class GestionTerapeutaComponent implements OnInit {
   terapeuta:TerapeutaClass= new TerapeutaClass("");
   terapeutas:TerapeutaClass[]=[];
 
-  constructor() { }
+  constructor(private _terapeutaService:TerapeutaService, private _tokenService:TokenService) { }
 
   ngOnInit() {
+    this._terapeutaService.listarTerapeutasPorOrganizacion(this._tokenService.idOTE)
+      .subscribe(
+        (terapeutas:TerapeutaClass[]) => {
+          //localStorage.setItem('terapeutas',JSON.stringify(terapeutas))
+          this.terapeutas = terapeutas.map(
+            (terapeuta:TerapeutaClass)=>{
+              terapeuta.editar = false;
+              return terapeuta;
+            }
+          );
+        },
+        error=>{
+          console.log("Error: ",error)
+        }
+      )
   }
 
 }

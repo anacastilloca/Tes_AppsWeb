@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {TerapeutaClass} from "../../../../../Modelos/TerapeutaClass";
 
 @Component({
   selector: 'app-ver-t',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ver-t.component.css']
 })
 export class VerTComponent implements OnInit {
+
+  @Input() terapeuta:TerapeutaClass;
 
   constructor() { }
 

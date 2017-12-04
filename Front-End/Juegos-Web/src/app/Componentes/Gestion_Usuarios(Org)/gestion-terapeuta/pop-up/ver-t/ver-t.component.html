@@ -1,3 +1,59 @@
-<p>
-  ver-t works!
-</p>
+<!--MODAL para ver un Terapeuta-->
+<div class="modal fade" id="verModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!--Contenido del modal-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Datos Personales del Terapeuta</h4>
+      </div>
+
+      <div class="modal-body">
+        <form  #terapeutaFormulario="ngForm" nonvalidate>
+          <label class="user">La cédula es el usuario</label>
+          <div class="form-group">
+            <p>
+              <label class="labelGT">Cédula:</label>
+              <input class="inputGT" name="cedulaTerapeuta" type="text"
+                     [(ngModel)]="terapeuta.cedula" disabled
+              />
+            </p>
+            <p>
+              <label class="labelGT">Nombre:</label>
+              <input class="inputGT" name="nombreTerapeuta" type="text"
+                     [(ngModel)]="terapeuta.nombre" disabled
+              />
+            </p>
+            <p>
+              <label class="labelGT">Contraseña:</label>
+              <input class="inputGT" name="contraseniaTerapeuta" type="password"
+                     [(ngModel)]="terapeuta.contrasenia" disabled
+              />
+            </p>
+            <p>
+              <label class="labelGT">Correo:</label>
+              <input class="inputGT" name="correoTerapeuta" type="email"
+                     [(ngModel)]="terapeuta.correo" disabled
+              >
+            </p>
+            <label class="labelGT">Dirección:</label>
+            <input class="inputGT" name="direccionTerapeuta" type="email"
+                   [(ngModel)]="terapeuta.direccion" disabled
+            >
+            <label class="labelGT">Celular:</label>
+            <input class="inputGT" name="celularTerapeuta" type="email"
+                   [(ngModel)]="terapeuta.celular" disabled
+            >
+            <input type="submit" value="Aceptar" class="btn btn-primary" data-dismiss="modal" />
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+      </div>
+
+    </div>
+  </div>
+</div>

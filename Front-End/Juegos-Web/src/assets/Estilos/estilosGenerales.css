@@ -3,7 +3,7 @@ body{
 }
 
 .titulo{
-  margin-top: 2%;
+  margin: 1% 0 0 0;
   text-align: center;
   font-size: 310%;
   font-weight: bold;
@@ -38,33 +38,13 @@ body{
   font-size: 16px;
 }
 
-#cuerpoGestionDatos{
-  margin: 0 10% 2% 10%;
-}
-
-.tablaGestionDastos{
-  margin: 1% 10% 2% 10%;
-  height: 600px;
-  overflow-y: auto;
-  font-size: 100%;
-}
-
-.inpBusqueda{
-  font-size: 130%;
-  padding: 2px 0 5px 0;
-  width: 65%;
-  border: 2px inset;
-  border-radius: 8px;
-}
-
 .navbar-default{
   background:#0C0A0B;
   font-size: 17px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .navegation.col-sm-12{
-  margin: 0px 15px 0px 0px;
   font-family: Berlin Sans FB, serif;
   font-size: 110%;
 }
@@ -88,7 +68,54 @@ body{
 .navbar-default .navbar-nav>li>a:hover{
   border-bottom: 2px solid #FF8F00;
   color: #B8B8B8;
-
 }
 
+#cabezeraGestionDatos{
+  margin: 1% 10% 2% 10%;
+  border-top: double #BFBFBF;
+  border-bottom: double #BFBFBF;
+  padding: 25px 0 23px 0;
+}
+
+#busqueda{
+  border: 2px solid #A5A4A6;
+  border-radius: 8px;
+}
+
+.inpBusqueda{
+  font-size: 130%;
+  padding: 2px 0 5px 0;
+  border-style: none;
+  width: 95%;
+}
+.inpBusqueda:focus{
+  outline:0px;
+}
+
+.btnBuscar{
+  padding: 6px 0 5px 0;
+  width: 1%;
+  background: white;
+  border-style: none;
+}
+
+.table-responsive{
+  margin: 1% 10% 2% 10%;
+  overflow-y: auto;
+}
+
+.table>thead>tr>th {
+  font-size: 17px;
+  border-top: 2px solid #A5A4A6;
+  border-bottom: 2px solid #A5A4A6;
+}
+
+.table>tbody>tr>td{
+  font-size: 15px;
+  border-bottom: 1px solid #A5A4A6;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #EDE6F4;
+}
 

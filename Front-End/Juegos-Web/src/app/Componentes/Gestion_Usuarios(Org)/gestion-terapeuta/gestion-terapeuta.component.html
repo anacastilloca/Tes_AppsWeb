@@ -3,32 +3,30 @@
       <h1 class="titulo">Gestión de datos del Terapeuta</h1>
     </div>
   </div>
-  <div class="row " id="cuerpoGestionDatos">
-    <div class="col-sm-12">
+  <div class="row " id="cabezeraGestionDatos">
+    <div class="col-sm-8" id="busqueda">
       <input class="inpBusqueda" type="text" name="buscarTerapeuta"
              [(ngModel)]="busquedaPorNombre" #buscarTerapeuta="ngModel" placeholder="Nombre del terapeuta" />
-      <button id="btnBuscar" class="btn btn-primary">
-        <span class="glyphicon glyphicon-search"></span>
-        Buscar
-      </button>
-
+      <button class="btnBuscar pull-right"><span class="glyphicon glyphicon-search"></span></button>
+    </div>
+      <div class="col-sm-4">
       <button id="btnAgregar" class="btn btn-success pull-right" data-toggle="modal" data-target="#agregarModal">
         <span class="glyphicon glyphicon-plus"> </span>
         Agregar
       </button>
     </div>
-
     <!--<app-agregar-pop-up (actualizacionTablaTerapeutas)="presentacionActualizadaAgregar($event)" > </app-agregar-pop-up>-->
   </div>
 
-  <div class="tablaGestionDastos">
+  <div class="table-responsive">
     <table class="table table-hover">
-      <thead class="thead-default">
+      <thead>
       <tr>
         <th>ID</th>
         <th>Cédula</th>
         <th>Nombre</th>
         <th>Celular</th>
+        <th>Correo</th>
         <th>Acciones</th>
       </tr>
       </thead>
@@ -38,17 +36,17 @@
         <td>{{tera.cedula}}</td>
         <td>{{tera.nombre}}</td>
         <td>{{tera.celular}}</td>
+        <td>{{tera.correo}}</td>
         <td>
           <button class="btn btn-info" data-toggle="modal" (click)="modalVer(indice)" data-target="#verModal">Ver </button>
 
-          <button class="btn btn-warning" data-toggle="modal" (click)="modalEditar(indice)" data-target="#editarModal">
+          <button class="btn btn-warning" data-toggle="modal" (click)="modalEditar(indice)" data-target="#editarModal" title="Editar">
             <span class="glyphicon glyphicon-pencil"></span>
           </button>
 
-          <button class="btn btn-danger">
-            <span class="glyphicon glyphicon-trash" data-toggle="modal" (click)="modalEliminar(indice)" data-target="#eliminarModal"></span>
+          <button class="btn btn-danger" data-toggle="modal" (click)="modalEliminar(indice)" data-target="#eliminarModal" title="Eliminar">
+            <span class="glyphicon glyphicon-trash"></span>
           </button>
-
         </td>
       </tr>
       </tbody>
