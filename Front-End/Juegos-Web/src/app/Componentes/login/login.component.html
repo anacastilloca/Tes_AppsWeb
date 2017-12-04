@@ -1,15 +1,13 @@
 <div class="container">
-  <h2 class="titulo">Iniciar Sesión</h2><br>
+  <h1 class="titulo">Iniciar Sesión</h1><br>
   <div class="row" >
     <div class="col-sm-3"></div>
     <div id="loginBody" class="col-sm-6">
-      <br>
       <label class="lbl">Modo: </label>
       <select [(ngModel)]="usersSeleccionado" name="usersSeleccionado" class="inp" (change)="onChange(usersSeleccionado)">
-        <option *ngFor="let user of tipoUsers" [value]="user.rol">
-          {{user.rol}}
-        </option>
+        <option *ngFor="let user of tipoUsers" [value]="user.rol">{{user.rol}}</option>
       </select>
+
       <label class="lbl">Usuario:</label>
       <input class="inp" maxlength="13" minlength="10" type="text" name="user"
              [(ngModel)]="ruc_cedula" #user="ngModel" placeholder="Cédula o RUC " />
@@ -24,7 +22,7 @@
       <button class="btn btn-primary" (click)="ingresarUsuario()" >Ingresar</button>
 
       <div *ngIf="!estaLogeado" class="alert alert-danger">
-        El ruc o la contraseña son incorrectos
+        El usuario o la contraseña son incorrectos
       </div>
 
     </div>

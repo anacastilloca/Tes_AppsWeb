@@ -13,7 +13,6 @@ export class AdmPrincipalComponent implements OnInit {
   //Para obtener el nombre de la organización
   nombreOrganizacion:string;
 
-
   constructor(private _tokenService:TokenService) {
     this.nombreOrganizacion=this._tokenService.nombreOTE;
   }

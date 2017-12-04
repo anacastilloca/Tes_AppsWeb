@@ -8,9 +8,17 @@ import { AdmRutasModule} from "./adm-rutas.module";
 import {AdmPrincipalComponent} from "./adm-principal.component";
 import {GestionTerapeutaComponent} from "../gestion-terapeuta/gestion-terapeuta.component";
 import {GestionEstudianteComponent} from "../gestion-estudiante/gestion-estudiante.component";
+import {AgregarTComponent} from "../gestion-terapeuta/pop-up/agregar-t/agregar-t.component";
+import {EditarTComponent} from "../gestion-terapeuta/pop-up/editar-t/editar-t.component";
+import {EliminarTComponent} from "../gestion-terapeuta/pop-up/eliminar-t/eliminar-t.component";
+import {VerTComponent} from "../gestion-terapeuta/pop-up/ver-t/ver-t.component";
 
 //Pipes
-import { BusquedaPipe } from "../../../Pipes/busqueda.pipe";
+import {BusquedaPipe} from "../Pipes/busqueda.pipe";
+
+//Servicios
+import {EstudianteService} from "../Servicios/estudiante.service";
+import {TerapeutaService} from "../Servicios/terapeuta.service";
 
 @NgModule({
   declarations: [
@@ -18,6 +26,11 @@ import { BusquedaPipe } from "../../../Pipes/busqueda.pipe";
     GestionTerapeutaComponent,
     GestionEstudianteComponent,
     BusquedaPipe,
+    AgregarTComponent,
+    EditarTComponent,
+    EliminarTComponent,
+    VerTComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,6 +42,8 @@ import { BusquedaPipe } from "../../../Pipes/busqueda.pipe";
 
   ],
   providers:[
+    EstudianteService,
+    TerapeutaService,
 
   ]
 })

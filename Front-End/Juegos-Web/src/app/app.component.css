@@ -1,14 +1,14 @@
 #img-Encabezado{
-  width: 60%;
-  height:50%;
+  width: 68%;
+  height: auto;
   margin: 2% 0 3% 0;
 }
 
 #titulo-Encabezado{
-  font-size: 350%;
+  font-size: 320%;
   text-transform: uppercase;
-  margin: 6% 10% 0 0;
-
+  text-align: center;
+  margin: 7% 10% 0 0;
 }
 
 #subtitulo-Encabezado{
@@ -35,11 +35,16 @@
   100% {color:#1E1A2D; left:0; top:0;}
 }
 
-
 header{
-  background-image: linear-gradient(#BFB78E,#EBF2DC,#BFB78E);
+  background-image: linear-gradient(#F2C0BC,#FDE9E8,#F2C0BC);
   text-align: center;
   color: #1E1A2D;
+  padding: 0 5% 0 10%;
+}
+
+section{
+  background: #F3F2F5;
+  padding: 0 0 3% 0;
 }
 
 .btn-default {
@@ -49,14 +54,13 @@ header{
 }
 
 .btn-default:hover {
-  background-color: #061C37;
+  background-color: #092749;
   color: white;
 }
 
 footer{
-  padding: 0 2% 0 2%;
+  padding: 1% 2% 0 2%;
   color: white;
-  margin-top: 6%;
-  background: #4C0013;
+  background: #0C0A0B;
   font-size: 100%;
 }

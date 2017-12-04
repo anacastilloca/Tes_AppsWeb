@@ -1,13 +1,11 @@
 body{
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  background: #EBF2DC;
 }
 
 .titulo{
-  margin-top: 3%;
+  margin-top: 2%;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 350%;
+  font-size: 310%;
   font-weight: bold;
   color: black;
 }
@@ -16,9 +14,10 @@ body{
   background: #575757;
   font-size: 130%;
   color: #ffffff;
+  text-align: center;
   padding: 8px 0px 8px 0px;
   width: 40%;
-  margin: 14px 0 0 0;
+  margin: 0 0 1% 0;
   border: 1px solid;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
@@ -28,14 +27,14 @@ body{
   font-size: 130%;
   padding: 8px 0 8px 0;
   width: 50%;
-  margin: 14px 0 0 0;
+  margin: 2% 0 0 0;
   border: 1px solid;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
 }
 
 .btn{
-  margin: 4% 0 5% 0;
+  margin: 1% 0 1% 0;
   font-size: 16px;
 }
 
@@ -49,26 +48,47 @@ body{
   overflow-y: auto;
   font-size: 100%;
 }
-.lblBusqueda{
-  background: #575757;
-  font-size: 130%;
-  text-align: center;
-  color: #ffffff;
-  padding: 8px 0px 8px 0px;
-  width: 25%;
-  border: 1px solid;
-  border-bottom-left-radius: 8px;
-  border-top-left-radius: 8px;
-}
 
 .inpBusqueda{
   font-size: 130%;
-  padding: 8px 0 8px 0;
-  width: 30%;
-  border: 1px solid;
-  border-bottom-right-radius: 8px;
-  border-top-right-radius: 8px;
+  padding: 2px 0 5px 0;
+  width: 65%;
+  border: 2px inset;
+  border-radius: 8px;
 }
 
+.navbar-default{
+  background:#0C0A0B;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.navegation.col-sm-12{
+  margin: 0px 15px 0px 0px;
+  font-family: Berlin Sans FB, serif;
+  font-size: 110%;
+}
+
+.navbar .active{
+  border-bottom: 2px solid #FF5200;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: white;
+}
+
+.navbar-default .navbar-brand{
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover{
+  color: #B8B8B8;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  border-bottom: 2px solid #FF8F00;
+  color: #B8B8B8;
+
+}
 
 

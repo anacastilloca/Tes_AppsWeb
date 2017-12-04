@@ -16,8 +16,8 @@ export class LoginComponent implements OnInit {
   //**ATRIBUTOS**//
 
   //Para el llenado del combobox del tipo de usuarios
-  usersSeleccionado: string;
-  tipoUsers = [{id: 1, rol: 'Administrador'}, {id: 2, rol: 'Terapeuta'}, {id: 3, rol: 'Estudiante'}];
+  usersSeleccionado: string='Administrador';
+  tipoUsers = [{rol: 'Administrador'}, {rol: 'Terapeuta'}, {rol: 'Estudiante'}];
 
   //Para realizar las validaciones de ingreso
   ruc_cedula: string;
