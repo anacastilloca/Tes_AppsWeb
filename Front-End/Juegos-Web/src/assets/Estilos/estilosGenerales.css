@@ -10,23 +10,42 @@ body{
   color: black;
 }
 
+
+
+.modal-title{
+  text-align: center;
+  font-weight: bold;
+}
+
+.modal-content{
+  background-color: #F5F5F5;
+}
+.form-group{
+  text-align: center;
+}
+
+.user{
+  color: #F0433A;
+}
+
 .lbl{
-  background: #575757;
+  background: #F2D6B3;
   font-size: 130%;
-  color: #ffffff;
+  color:#0C0A0B ;
   text-align: center;
   padding: 8px 0px 8px 0px;
   width: 40%;
   margin: 0 0 1% 0;
-  border: 1px solid;
+  border: 1px solid #BF826B;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
 }
 
 .inp{
+  background-color: white;
   font-size: 130%;
   padding: 8px 0 8px 0;
-  width: 50%;
+  width: 55%;
   margin: 2% 0 0 0;
   border: 1px solid;
   border-bottom-right-radius: 8px;
@@ -80,6 +99,7 @@ body{
 #busqueda{
   border: 2px solid #A5A4A6;
   border-radius: 8px;
+  background-color: white;
 }
 
 .inpBusqueda{

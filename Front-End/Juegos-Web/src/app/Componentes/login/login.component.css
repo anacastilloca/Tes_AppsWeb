@@ -4,4 +4,26 @@
   padding: 1%;
 }
 
+.lblogin{
+  background: #575757;
+  font-size: 130%;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 0px 8px 0px;
+  width: 40%;
+  margin: 0 0 1% 0;
+  border: 1px solid;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.inplogin{
+  font-size: 130%;
+  padding: 8px 0 8px 0;
+  width: 50%;
+  margin: 2% 0 0 0;
+  border: 1px solid;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
 

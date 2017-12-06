@@ -10,42 +10,42 @@
       </div>
 
       <div class="modal-body">
-        <form  #terapeutaFormulario="ngForm" nonvalidate>
+        <form>
           <label class="user">La cédula es el usuario</label>
           <div class="form-group">
             <p>
-              <label class="labelGT">Cédula:</label>
-              <input class="inputGT" name="cedulaTerapeuta" type="text"
+              <label class="lbl">Cédula:</label>
+              <input class="inp" name="cedulaTerapeuta" type="text"
                      [(ngModel)]="terapeuta.cedula" disabled
               />
             </p>
             <p>
-              <label class="labelGT">Nombre:</label>
-              <input class="inputGT" name="nombreTerapeuta" type="text"
+              <label class="lbl">Nombre:</label>
+              <input class="inp" name="nombreTerapeuta" type="text"
                      [(ngModel)]="terapeuta.nombre" disabled
               />
             </p>
             <p>
-              <label class="labelGT">Contraseña:</label>
-              <input class="inputGT" name="contraseniaTerapeuta" type="password"
+              <label class="lbl">Contraseña:</label>
+              <input class="inp" name="contraseniaTerapeuta" type="password"
                      [(ngModel)]="terapeuta.contrasenia" disabled
               />
             </p>
             <p>
-              <label class="labelGT">Correo:</label>
-              <input class="inputGT" name="correoTerapeuta" type="email"
+              <label class="lbl">Correo:</label>
+              <input class="inp" name="correoTerapeuta" type="email"
                      [(ngModel)]="terapeuta.correo" disabled
               >
             </p>
-            <label class="labelGT">Dirección:</label>
-            <input class="inputGT" name="direccionTerapeuta" type="email"
+            <label class="lbl">Dirección:</label>
+            <input class="inp" name="direccionTerapeuta" type="text"
                    [(ngModel)]="terapeuta.direccion" disabled
             >
-            <label class="labelGT">Celular:</label>
-            <input class="inputGT" name="celularTerapeuta" type="email"
+            <label class="lbl">Celular:</label>
+            <input class="inp" name="celularTerapeuta" type="text"
                    [(ngModel)]="terapeuta.celular" disabled
             >
-            <input type="submit" value="Aceptar" class="btn btn-primary" data-dismiss="modal" />
+
           </div>
         </form>
       </div>

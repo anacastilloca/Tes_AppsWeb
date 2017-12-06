@@ -39,4 +39,8 @@ export class GestionTerapeutaComponent implements OnInit {
       )
   }
 
+  modalVer(indice){
+    this.terapeuta=this.terapeutas[indice];
+  }
+
 }
