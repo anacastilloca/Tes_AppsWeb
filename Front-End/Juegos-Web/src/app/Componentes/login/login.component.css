@@ -1,6 +1,10 @@
+#login{
+  padding-top: 1%;
+}
+
 #loginBody{
   text-align: center;
-  border: 3px ridge;
+  border: 1px solid #575757;
   padding: 1%;
 }
 
@@ -22,7 +26,7 @@
   padding: 8px 0 8px 0;
   width: 50%;
   margin: 2% 0 0 0;
-  border: 1px solid;
+  border: 1px solid #BFBFBF;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
 }

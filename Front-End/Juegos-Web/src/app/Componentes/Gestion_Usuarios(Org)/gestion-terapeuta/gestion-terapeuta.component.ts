@@ -43,4 +43,9 @@ export class GestionTerapeutaComponent implements OnInit {
     this.terapeuta=this.terapeutas[indice];
   }
 
+  modalAgregarActualizarFrontEnd(evento){
+    //console.log(evento)
+    this.terapeutas.push(evento);
+  }
+
 }

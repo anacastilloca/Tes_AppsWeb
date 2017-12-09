@@ -1,19 +1,33 @@
 #img-Encabezado{
-  width: 60%;
+  width: 90%;
   height: auto;
   margin: 2% 0 3% 0;
 }
 
-#titulo-Encabezado{
-  font-size: 320%;
-  text-transform: uppercase;
+#encabezadoTituloySub{
   text-align: center;
-  margin: 4% 10% 0 0;
+}
+
+#titulo-Encabezado{
+  text-transform: uppercase;
+  margin: 5% 10% 0 0;
+}
+
+@media(max-width: 1580px) {
+  #titulo-Encabezado {
+    font-size: 44px;
+  }
+}
+
+@media(max-width: 768px) {
+  #titulo-Encabezado {
+    font-size: 39px;
+  }
 }
 
 #subtitulo-Encabezado{
   font-size: 120%;
-  margin: 2% 25% 0 0;
+  margin: 2% 25% 4% 0;
   position: relative;
   /* Safari 4.0 - 8.0 */
   -webkit-animation: subtitulo 12s linear 2s infinite alternate;
@@ -36,15 +50,14 @@
 }
 
 header{
-  background-image: linear-gradient(#F2C0BC,#FDE9E8,#F2C0BC);
-  text-align: center;
+  background-image: linear-gradient(#F2C0BC,#FBECE9,#F2C0BC);
   color: #1E1A2D;
-  padding: 0 5% 0 4%;
+  padding: 0 5% 0 6%;
 }
 
 section{
   background: #F3F2F5;
-  padding: 0 0 6% 0;
+  padding: 0 0 5% 0;
 }
 
 .btn-default {
