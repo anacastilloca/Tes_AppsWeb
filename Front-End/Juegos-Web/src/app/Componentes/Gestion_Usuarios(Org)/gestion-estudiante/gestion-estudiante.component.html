@@ -1,3 +1,60 @@
-<p>
-  gestion-estudiante works!
-</p>
+<div class="gEstudiante">
+  <h1 class="titulo">Gestión de datos del Estudiante</h1>
+  <div class="row " id="cabezeraGestionDatos">
+    <div class="col-sm-8" id="busqueda">
+      <input class="inpBusqueda" type="text" name="buscarEstudiante"
+             [(ngModel)]="busquedaPorNombre" #buscarTerapeuta="ngModel" placeholder="Nombre del estudiante" />
+      <button class="btnBuscar pull-right"><span class="glyphicon glyphicon-search"></span></button>
+    </div>
+    <div class="col-sm-4">
+      <button id="btnAgregar" class="btn btn-success pull-right" data-toggle="modal" data-target="#agregarModal">
+        <span class="glyphicon glyphicon-plus"> </span>
+        Agregar
+      </button>
+    </div>
+    <!--<app-agregar-t (agregarTerapeutaFrontEnd)="actualizarTablaAgregar($event)"> </app-agregar-t>-->
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Cédula</th>
+        <th>Nombre</th>
+        <th>Representante</th>
+        <th>Acciones</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let estu of estudiantes | busqueda:busquedaPorNombre; let indice=index">
+        <td>{{indice+1}}</td>
+        <td>{{estu.cedula}}</td>
+        <td>{{estu.nombre}}</td>
+        <td>{{estu.nombreRepresentante}}</td>
+        <td>
+          <button class="btn btn-info btn-sm" data-toggle="modal" (click)="modalVer(indice)" data-target="#verModal"
+                  title="Ver información">
+            <span class="glyphicon glyphicon-file"></span>
+          </button>
+
+          <button class="btn btn-warning btn-sm" data-toggle="modal" (click)="modalEditar(indice)" data-target="#editarModal"
+                  title="Editar">
+            <span class="glyphicon glyphicon-pencil"></span>
+          </button>
+
+          <button class="btn btn-danger btn-sm" data-toggle="modal" (click)="modalEliminar(indice)"
+                  data-target="#eliminarModal" title="Eliminar">
+            <span class="glyphicon glyphicon-trash"></span>
+          </button>
+
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <!--<app-ver-t [terapeuta]="terapeuta" ></app-ver-t>-->
+    <!--<app-editar-t [editarterapeuta]="terapeuta"></app-editar-t>-->
+    <!--<app-eliminar-t [terapeuta]="terapeuta" (eliminarTerapeutas)="actualizarTablaEliminar($event)"></app-eliminar-t>-->
+  </div>
+
+</div>
