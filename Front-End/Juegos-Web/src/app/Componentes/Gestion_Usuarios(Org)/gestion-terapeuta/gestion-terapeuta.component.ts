@@ -39,13 +39,13 @@ export class GestionTerapeutaComponent implements OnInit {
       )
   }
 
-  modalVer(indice){
-    this.terapeuta=this.terapeutas[indice];
-  }
-
   actualizarTablaAgregar(evento){
     //console.log(evento)
     this.terapeutas.push(evento);
+  }
+
+  modalEditar(indice){
+    this.terapeuta=this.terapeutas[indice]
   }
 
   modalEliminar(indice){
@@ -55,6 +55,10 @@ export class GestionTerapeutaComponent implements OnInit {
   actualizarTablaEliminar(evento){
     let indice = this.terapeutas.indexOf(evento);
     this.terapeutas.splice(indice,1);
+  }
+
+  modalVer(indice){
+    this.terapeuta=this.terapeutas[indice];
   }
 
 

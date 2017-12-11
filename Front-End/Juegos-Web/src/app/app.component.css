@@ -9,6 +9,7 @@
 }
 
 #titulo-Encabezado{
+  font-size: 44px;
   text-transform: uppercase;
   margin: 5% 10% 0 0;
 }
@@ -67,7 +68,7 @@ section{
 }
 
 .btn-default:hover {
-  background-color: #092749;
+  background-color: #092749 !important;
   color: white;
 }
 

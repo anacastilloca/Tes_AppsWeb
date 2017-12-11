@@ -1,20 +1,20 @@
-<div id="eliminarModal" class="modal fade" role="dialog">
+<!--Eliminar registro de un terapeuta-->
+<div id="eliminarModal" class="modal fade" role="dialog" data-backdrop="static">
   <div class="modal-dialog">
     <div class="modal-content">
 
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title">Confirmación</h4>
       </div>
 
       <div class="modal-body">
-        <p>¿Está seguro que desea eliminar el registro de {{terapeuta.nombre}}?</p>
+        <p class="preguntaEliminar">¿Está seguro que desea eliminar el registro de <strong>{{terapeuta.nombre}}</strong>?</p>
         <p class="text-warning"><small>Al presionar Sí, el registro se eliminará permanentemente</small></p>
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" (click)="eliminarTerapeuta()" data-dismiss="modal">Sí</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button class="btn btn-default" id="btnSi" (click)="eliminarTerapeuta()" data-dismiss="modal">Sí</button>
+        <button class="btn btn-default" data-dismiss="modal">No</button>
       </div>
     </div>
   </div>

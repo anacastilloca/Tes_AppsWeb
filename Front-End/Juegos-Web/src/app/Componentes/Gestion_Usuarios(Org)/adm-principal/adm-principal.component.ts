@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {TokenService} from "../../login/Token/token.service";
+import {AuthOrganizacionService} from "../../../Servicios/Autenticacion/auth-organizacion.service";
 
 @Component({
   selector: 'app-adm-principal',
@@ -13,18 +14,24 @@ export class AdmPrincipalComponent implements OnInit {
   //Para obtener el nombre de la organización
   nombreOrganizacion:string;
 
-  constructor(private _tokenService:TokenService) {
+  constructor(private _tokenService:TokenService, private _authOrg:AuthOrganizacionService) {
+   // this._tokenService.token=localStorage.getItem('idOTE');
+    //this._tokenService.idOTE=localStorage.getItem('tokenOrganizacion');
+   // this._tokenService.nombreOTE=localStorage.getItem('nombreOTE');
+
     this.nombreOrganizacion=this._tokenService.nombreOTE;
   }
 
   ngOnInit() {
-  // console.log(this._tokenService.token);
-  // console.log(this._tokenService.idOTE);
-   //console.log(this._tokenService.nombreOTE);
+    console.log(this._tokenService.nombreOTE);
+    console.log(this._tokenService.token);
+    console.log(this._tokenService.idOTE);
+
+
   }
 
   logOut(){
-    this._tokenService.token="";
+    localStorage.clear();
   }
 
 }

@@ -18,8 +18,14 @@ export class AuthTerapeutaService {
     let datosEnviar={
       cedula,
       contrasenia:contrasenia
-    }
+    };
 
     return this._http.post(this.url+metodo, datosEnviar)
   }
+
+
+  logOut(){
+    localStorage.clear();
+  }
+
 }

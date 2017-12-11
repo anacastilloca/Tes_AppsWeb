@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable()
-export class TokenService {
+export class TokenService{
 
   /**ATRIBUTOS**/
 
@@ -10,6 +10,11 @@ export class TokenService {
   idOTE:string;
   nombreOTE:string;
 
-  constructor() { }
+  constructor() {
+
+    this.idOTE=localStorage.getItem('idOTE');
+    this.token=localStorage.getItem('tokenOrganizacion');
+    this.nombreOTE=localStorage.getItem('nombreOTE')
+  }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, DoCheck, OnInit} from '@angular/core';
 import {AuthOrganizacionService} from "../../Servicios/Autenticacion/auth-organizacion.service";
 import {AuthTerapeutaService} from "../../Servicios/Autenticacion/auth-terapeuta.service";
 import {AuthEstudianteService} from "../../Servicios/Autenticacion/auth-estudiante.service";
@@ -29,15 +29,15 @@ export class LoginComponent implements OnInit {
   constructor(private _authOrganizacion: AuthOrganizacionService,
               private _authTerapeuta: AuthTerapeutaService,
               private _authEstudiante: AuthEstudianteService,
-              private _tokenService:TokenService,
               private _router: Router) {
+    console.log('perrp')
   }
 
   ngOnInit() {
-
+    //console.log(this._tokenService.nombreOTE);
   }
 
-  //Método que devuelve el usuario seleccionado
+   //Método que devuelve el usuario seleccionado
   onChange(userSelec){
     this.usersSeleccionado=userSelec;
   }
@@ -50,9 +50,9 @@ export class LoginComponent implements OnInit {
         .map(res => res.json())
         .subscribe(
           token=>{
-            this._tokenService.token=token.token;
-            this._tokenService.idOTE=token.idOrganizacion.toString();
-            this._tokenService.nombreOTE=token.nombreOrganizacion;
+            localStorage.setItem('tokenOrganizacion', token.token);
+            localStorage.setItem('idOTE',token.idOrganizacion.toString());
+            localStorage.setItem('nombreOTE',token.nombreOrganizacion);
             this._router.navigate(['adm/terapeuta']);
             this.estaLogeado=true;
           },
@@ -66,10 +66,10 @@ export class LoginComponent implements OnInit {
         .map(res => res.json())
         .subscribe(
           token=>{
-            localStorage.setItem('token', this._tokenService.token)
-            this._tokenService.token=token.token;
-            this._tokenService.idOTE=token.idTerapeuta.toString();
-            this._tokenService.nombreOTE=token.nombreTerapeuta;
+            //this._tokenService.token=token.token;
+           // localStorage.setItem('tokenTerapeuta', this._tokenService.token);
+            //this._tokenService.idOTE=token.idTerapeuta.toString();
+           // this._tokenService.nombreOTE=token.nombreTerapeuta;
             this._router.navigate(['saca/sa']);
             this.estaLogeado=true;
           },
@@ -83,9 +83,10 @@ export class LoginComponent implements OnInit {
         .map(res => res.json())
         .subscribe(
           token=>{
-            this._tokenService.token=token.token;
-            this._tokenService.idOTE=token.idEstudiante.toString();
-            this._tokenService.nombreOTE=token.nombreEstudiante;
+           // this._tokenService.token=token.token;
+            //localStorage.setItem('tokenEstudiante', this._tokenService.token);
+            //this._tokenService.idOTE=token.idEstudiante.toString();
+           // this._tokenService.nombreOTE=token.nombreEstudiante;
             this._router.navigate(['juegos/saN1']);
             this.estaLogeado=true;
           },
@@ -93,6 +94,7 @@ export class LoginComponent implements OnInit {
             this.estaLogeado=false;
           })
     }
+
   }
 
 }

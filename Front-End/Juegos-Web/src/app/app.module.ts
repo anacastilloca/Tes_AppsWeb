@@ -22,6 +22,7 @@ import {AdmModule} from "./Componentes/Gestion_Usuarios(Org)/adm-principal/adm.m
   declarations: [
     AppComponent,
     LoginComponent,
+
   ],
   imports: [
     BrowserModule,

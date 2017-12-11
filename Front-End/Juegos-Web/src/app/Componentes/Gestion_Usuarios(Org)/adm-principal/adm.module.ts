@@ -12,6 +12,10 @@ import {AgregarTComponent} from "../gestion-terapeuta/pop-up/agregar-t/agregar-t
 import {EditarTComponent} from "../gestion-terapeuta/pop-up/editar-t/editar-t.component";
 import {EliminarTComponent} from "../gestion-terapeuta/pop-up/eliminar-t/eliminar-t.component";
 import {VerTComponent} from "../gestion-terapeuta/pop-up/ver-t/ver-t.component";
+import {AgregarEComponent} from "../gestion-estudiante/Pop-up/agregar-e/agregar-e.component";
+import {EditarEComponent} from "../gestion-estudiante/Pop-up/editar-e/editar-e.component";
+import {VerEComponent} from "../gestion-estudiante/Pop-up/ver-e/ver-e.component";
+import {EliminarEComponent} from "../gestion-estudiante/Pop-up/eliminar-e/eliminar-e.component";
 
 //Pipes
 import {BusquedaPipe} from "../Pipes/busqueda.pipe";
@@ -30,6 +34,10 @@ import {TerapeutaService} from "../Servicios/terapeuta.service";
     EditarTComponent,
     EliminarTComponent,
     VerTComponent,
+    AgregarEComponent,
+    EditarEComponent,
+    VerEComponent,
+    EliminarEComponent,
 
   ],
   imports: [

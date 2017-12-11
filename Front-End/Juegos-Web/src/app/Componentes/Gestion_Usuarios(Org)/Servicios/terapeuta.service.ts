@@ -20,6 +20,7 @@ export class TerapeutaService {
               private _urlPrincipal:UrlPrincipalService) {
     this.url=this._urlPrincipal.url+this.modelo;
     this.headers= new Headers();
+    console.log('Servicio terapeuta',this._tokenService.token)
     this.headers.append('Authorization','Bearer'+this._tokenService.token)
   }
 

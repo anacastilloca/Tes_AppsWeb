@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {TerapeutaClass} from "../../../../../Modelos/TerapeutaClass";
+import {TerapeutaService} from "../../../Servicios/terapeuta.service";
 
 @Component({
   selector: 'app-editar-t',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarTComponent implements OnInit {
 
-  constructor() { }
+  /**ATRIBUTOS**/
+
+  //Para obtener el registro de terapeuta a actualizar
+  @Input() editarterapeuta:TerapeutaClass;
+
+  status:boolean=false;
+
+  constructor(private _terapeutaService: TerapeutaService) { }
 
   ngOnInit() {
+  }
+
+  onSubmit(){
+    this._terapeutaService.editarTerapeuta(this.editarterapeuta)
+      .subscribe(
+        res=>{
+          this.status=true
+        },
+        err=>{
+          this.status=false
+        });
   }
 
 }

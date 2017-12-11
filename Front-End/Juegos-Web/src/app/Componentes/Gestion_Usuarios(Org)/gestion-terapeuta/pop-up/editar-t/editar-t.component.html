@@ -1,3 +1,91 @@
-<p>
-  editar-t works!
-</p>
+<!--MODAL para Actualizar los datos de un Terapeuta-->
+<div class="modal fade" id="editarModal" role="dialog" data-backdrop="static">
+  <div class="modal-dialog">
+
+    <!--Contenido del modal-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Actualizar Datos Personales del Terapeuta</h4>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-success" *ngIf="status">
+          Datos actualizados correctamente
+        </div>
+
+        <div class="alert alert-danger" *ngIf="!status">
+          Los datos no se actualizaron
+        </div>
+
+        <form #editForm="ngForm" (ngSubmit)="onSubmit()">
+          <label class="user">La cédula es el usuario</label>
+          <div class="form-group">
+            <label class="lbl">Cédula:</label>
+            <input class="inp" required maxlength="10" minlength="10"
+                   placeholder="Ingrese la cédula" name="cedulaTerapeuta" type="text"
+                   [(ngModel)]="editarterapeuta.cedula"
+                   #cedulaTerapeuta="ngModel"
+            />
+
+            <div *ngIf="cedulaTerapeuta.errors?.minlength && cedulaTerapeuta.touched" class="alert alert-danger"
+                 role="alert">
+              <strong>¡Cuidado!</strong> La cédula es obligatoria y tiene 10 dígitos.
+            </div>
+
+            <label class="lbl">Nombre:</label>
+            <input class="inp" required maxlength="60"
+                   placeholder="Ingrese el nombre" name="nombreTerapeuta" type="text"
+                   [(ngModel)]="editarterapeuta.nombre"
+                   #nombreTerapeuta="ngModel"
+            />
+            <div *ngIf="!nombreTerapeuta.valid && nombreTerapeuta.touched" class="alert alert-danger">
+              El nombre es obligatorio
+            </div>
+
+            <label class="lbl">Contraseña:</label>
+            <input class="inp" required minlength="5"
+                   placeholder="Ingrese la contraseña" name="contraseniaTerapeuta" type="password"
+                   [(ngModel)]="editarterapeuta.contrasenia"
+                   #contraseniaTerapeuta="ngModel"
+            />
+
+            <div *ngIf="!contraseniaTerapeuta.valid && contraseniaTerapeuta.touched" class="alert alert-danger">
+              La contraseña es obligatoria
+            </div>
+
+            <label class="lbl">Correo:</label>
+            <input class="inp" required maxlength="30"
+                   placeholder="Ingrese el correo" name="correoTerapeuta" type="email"
+                   [(ngModel)]="editarterapeuta.correo"
+                   #correoTerapeuta="ngModel"
+            >
+            <div *ngIf="!correoTerapeuta.valid && contraseniaTerapeuta.touched" role="alert">
+              El correo es incorrecto y obligatorio
+            </div>
+
+            <label class="lbl">Dirección:</label>
+            <input class="inp" maxlength="60"
+                   placeholder="Ingrese la dirección" name="direccionTerapeuta" type="text"
+                   [(ngModel)]="editarterapeuta.direccion"
+                   #direccionTerapeuta="ngModel"
+            >
+
+            <label class="lbl">Celular:</label>
+            <input class="inp" maxlength="10"
+                   placeholder="Ingrese el celular" name="celularTerapeuta" type="text"
+                   [(ngModel)]="editarterapeuta.celular"
+                   #celularTerapeuta="ngModel"
+            >
+
+            <button class="btn btn-primary" type="submit" [disabled]="!editForm.valid">Actualizar</button>
+
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+      </div>
+
+    </div>
+  </div>
+</div>

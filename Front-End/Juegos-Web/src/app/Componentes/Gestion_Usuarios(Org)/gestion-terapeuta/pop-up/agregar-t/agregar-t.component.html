@@ -40,21 +40,22 @@
                    [(ngModel)]="terapeutaNuevo.contrasenia"
                    #contraseniaTerapeuta="ngModel"
             />
-            <div *ngIf="!contraseniaTerapeuta.valid && contraseniaTerapeuta.touched && !contraseniaTerapeuta.minLength"
-                 role="alert">
-              <br>La contraseña es obligatoria y debe tener más de 5 caracteres
+            <div *ngIf="!contraseniaTerapeuta.valid && contraseniaTerapeuta.touched && !contraseniaTerapeuta.minLength" class="alert alert-danger">
+              La contraseña es obligatoria y debe tener más de 5 caracteres
             </div>
 
 
             <label class="lbl">Correo:</label>
-            <input class="inp" required maxlength="30"
+            <input class="inp" maxlength="30"
                    placeholder="Ingrese el correo" name="correoTerapeuta" type="email"
                    [(ngModel)]="terapeutaNuevo.correo"
+                   pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
                    #correoTerapeuta="ngModel"
             >
-            <div *ngIf="!correoTerapeuta.valid && contraseniaTerapeuta.touched" role="alert">
-              <br> El correo es incorrecto
+            <div *ngIf="!correoTerapeuta.valid && correoTerapeuta.touched" class="alert alert-warning">
+              El correo está incompleto o  es incorrecto
             </div>
+
 
             <label class="lbl">Dirección:</label>
             <input class="inp" maxlength="60"
@@ -70,7 +71,7 @@
                    #celularTerapeuta="ngModel"
             >
 
-            <button class="btn btn-primary" type="submit" [disabled]="!registerForm.valid">Crear usuario</button>
+            <button class="btn btn-primary" type="submit" [disabled]="!registerForm.valid">Crear</button>
 
           </div>
         </form>

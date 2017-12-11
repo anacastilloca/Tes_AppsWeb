@@ -26,7 +26,8 @@ export class AgregarTComponent implements OnInit {
 
   constructor(private _tokenService: TokenService, private _terapeutaService: TerapeutaService,
               private _router: Router) {
-    this.terapeutaNuevo = new TerapeutaClass("", "", "", "", "", 0, "");
+    this.terapeutaNuevo=new TerapeutaClass("");
+    //this.terapeutaNuevo = new TerapeutaClass("", "", "", "", "", 0, "");
   }
 
   ngOnInit() {
@@ -40,7 +41,8 @@ export class AgregarTComponent implements OnInit {
       .subscribe(
         response => {
             this.agregarTerapeutaFrontEnd.emit(this.terapeutaNuevo)
-            this.terapeutaNuevo = new TerapeutaClass("", "", "", "", "", 0, "");
+            this.terapeutaNuevo=new TerapeutaClass("");
+            //this.terapeutaNuevo = new TerapeutaClass("", "", "", "", "", 0, "");
             registerForm.reset();
         },
         err => {
