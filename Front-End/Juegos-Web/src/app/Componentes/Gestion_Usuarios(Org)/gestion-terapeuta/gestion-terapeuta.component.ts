@@ -43,9 +43,19 @@ export class GestionTerapeutaComponent implements OnInit {
     this.terapeuta=this.terapeutas[indice];
   }
 
-  modalAgregarActualizarFrontEnd(evento){
+  actualizarTablaAgregar(evento){
     //console.log(evento)
     this.terapeutas.push(evento);
   }
+
+  modalEliminar(indice){
+    this.terapeuta=this.terapeutas[indice];
+  }
+
+  actualizarTablaEliminar(evento){
+    let indice = this.terapeutas.indexOf(evento);
+    this.terapeutas.splice(indice,1);
+  }
+
 
 }

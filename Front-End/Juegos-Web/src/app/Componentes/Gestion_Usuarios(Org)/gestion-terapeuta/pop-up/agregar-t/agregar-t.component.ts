@@ -14,36 +14,40 @@ export class AgregarTComponent implements OnInit {
 
   /**ATRIBUTOS**/
 
-  //Se envia el registro al frontend
+    //Se envia el registro al frontend
   @Output() agregarTerapeutaFrontEnd = new EventEmitter();
 
   //Para crear el registro de un terapeuta
-  terapeutaNuevo:TerapeutaClass;
-  teraAux:any;
+  terapeutaNuevo: TerapeutaClass;
+
+  //Para validar si ya exite la cédula
+  status:boolean=true;
 
 
-  constructor(private _tokenService:TokenService, private _terapeutaService:TerapeutaService,
+  constructor(private _tokenService: TokenService, private _terapeutaService: TerapeutaService,
               private _router: Router) {
-    this.terapeutaNuevo=new TerapeutaClass("");
+    this.terapeutaNuevo = new TerapeutaClass("", "", "", "", "", 0, "");
   }
 
   ngOnInit() {
 
   }
 
-  agregarTerapeuta(){
-    console.log(this.terapeutaNuevo);
-    this.teraAux=this.terapeutaNuevo;
-    this.teraAux.idOrganizacion=this._tokenService.idOTE;
-    this._terapeutaService.agregarTerapeuta(this.teraAux)
+  onSubmit(registerForm) {
+    console.log('Terapeuta Ingresado', this.terapeutaNuevo);
+    this.terapeutaNuevo.idOrganizacion = this._tokenService.idOTE;
+    this._terapeutaService.agregarTerapeuta(this.terapeutaNuevo)
       .subscribe(
-        (terapeutaCreado:TerapeutaClass)=>{
-          terapeutaCreado=new TerapeutaClass("")
-          console.log('ss',terapeutaCreado)
-          this.agregarTerapeutaFrontEnd.emit(this.terapeutaNuevo)
+        response => {
+            this.agregarTerapeutaFrontEnd.emit(this.terapeutaNuevo)
+            this.terapeutaNuevo = new TerapeutaClass("", "", "", "", "", 0, "");
+            registerForm.reset();
+        },
+        err => {
+          this.status = false;
+          console.log('Error terapeuta', err);
         }
       );
 
   }
-
 }

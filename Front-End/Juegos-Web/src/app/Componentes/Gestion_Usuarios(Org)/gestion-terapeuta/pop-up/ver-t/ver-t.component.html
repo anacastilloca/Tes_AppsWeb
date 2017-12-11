@@ -13,30 +13,23 @@
         <form>
           <label class="user">La cédula es el usuario</label>
           <div class="form-group">
-            <p>
               <label class="lbl">Cédula:</label>
               <input class="inp" name="cedulaTerapeuta" type="text"
                      [(ngModel)]="terapeuta.cedula" disabled
               />
-            </p>
-            <p>
               <label class="lbl">Nombre:</label>
               <input class="inp" name="nombreTerapeuta" type="text"
                      [(ngModel)]="terapeuta.nombre" disabled
               />
-            </p>
-            <p>
               <label class="lbl">Contraseña:</label>
               <input class="inp" name="contraseniaTerapeuta" type="password"
                      [(ngModel)]="terapeuta.contrasenia" disabled
               />
-            </p>
-            <p>
               <label class="lbl">Correo:</label>
               <input class="inp" name="correoTerapeuta" type="email"
                      [(ngModel)]="terapeuta.correo" disabled
               >
-            </p>
+
             <label class="lbl">Dirección:</label>
             <input class="inp" name="direccionTerapeuta" type="text"
                    [(ngModel)]="terapeuta.direccion" disabled
@@ -45,15 +38,12 @@
             <input class="inp" name="celularTerapeuta" type="text"
                    [(ngModel)]="terapeuta.celular" disabled
             >
-
           </div>
         </form>
       </div>
-
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
       </div>
-
     </div>
   </div>
 </div>

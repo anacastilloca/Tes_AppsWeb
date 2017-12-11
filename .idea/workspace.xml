@@ -3,21 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="4b388561-8114-4f42-8286-ab2e199f0631" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/controllers/AuthOrganizacionController.js" afterPath="$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/controllers/AuthOrganizacionController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm.module.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.html" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.html" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/eliminar-t/eliminar-t.component.html" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/eliminar-t/eliminar-t.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/eliminar-t/eliminar-t.component.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/eliminar-t/eliminar-t.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/ver-t/ver-t.component.html" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/ver-t/ver-t.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.css" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.html" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.css" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.html" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.module.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-organizacion.service.ts" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-organizacion.service.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Juegos-Web/src/index.html" afterPath="$PROJECT_DIR$/Front-End/Juegos-Web/src/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,38 +26,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuthEstudianteController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/controllers/AuthEstudianteController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-276">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthOrganizacionController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/controllers/AuthOrganizacionController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Estudiante.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/models/Estudiante.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,8 +42,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/models/Organizacion.js" />
-        <option value="$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/models/Estudiante.js" />
         <option value="$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/models/Terapeuta.js" />
         <option value="$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/models/Comunicacion_Alternativa.js" />
         <option value="$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/models/Secuencia_Acciones.js" />
@@ -106,28 +69,30 @@
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-rutas.module.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Pipes/busqueda.pipe.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.css" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-organizacion.service.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/Token/token.service.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-principal.service.ts" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/Servicios/terapeuta.service.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/ver-t/ver-t.component.ts" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/ver-t/ver-t.component.html" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.html" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.css" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.html" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.ts" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.html" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm.module.ts" />
         <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/index.html" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.html" />
-        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.ts" />
         <option value="$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/controllers/AuthOrganizacionController.js" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-organizacion.service.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/eliminar-t/eliminar-t.component.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/eliminar-t/eliminar-t.component.html" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.ts" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.html" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.html" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css" />
+        <option value="$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/ver-t/ver-t.component.html" />
       </list>
     </option>
   </component>
@@ -148,7 +113,7 @@
     <handled-path value="$PROJECT_DIR$/Back-End/DB_Juegos_Web/node_modules" />
     <handled-path value="$PROJECT_DIR$/Front-End/Juegos-Web/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="814" />
     <option name="height" value="788" />
@@ -180,36 +145,150 @@
             <path>
               <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Back-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Back-End" type="462c0819:PsiDirectoryNode" />
-              <item name="DB_Juegos_Web" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Back-End" type="462c0819:PsiDirectoryNode" />
-              <item name="DB_Juegos_Web" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Back-End" type="462c0819:PsiDirectoryNode" />
-              <item name="DB_Juegos_Web" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Back-End" type="462c0819:PsiDirectoryNode" />
-              <item name="DB_Juegos_Web" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
+              <item name="Gestion_Usuarios(Org)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
+              <item name="Gestion_Usuarios(Org)" type="462c0819:PsiDirectoryNode" />
+              <item name="adm-principal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
+              <item name="Gestion_Usuarios(Org)" type="462c0819:PsiDirectoryNode" />
+              <item name="gestion-terapeuta" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
+              <item name="Gestion_Usuarios(Org)" type="462c0819:PsiDirectoryNode" />
+              <item name="gestion-terapeuta" type="462c0819:PsiDirectoryNode" />
+              <item name="pop-up" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
+              <item name="Gestion_Usuarios(Org)" type="462c0819:PsiDirectoryNode" />
+              <item name="gestion-terapeuta" type="462c0819:PsiDirectoryNode" />
+              <item name="pop-up" type="462c0819:PsiDirectoryNode" />
+              <item name="agregar-t" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
+              <item name="Gestion_Usuarios(Org)" type="462c0819:PsiDirectoryNode" />
+              <item name="Servicios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modelos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Servicios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tes_AppsWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tes_AppsWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Front-End" type="462c0819:PsiDirectoryNode" />
+              <item name="Juegos-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Estilos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -268,15 +347,15 @@
       <workItem from="1512593513660" duration="9655000" />
       <workItem from="1512679060819" duration="17401000" />
       <workItem from="1512744116739" duration="23041000" />
-      <workItem from="1512836352254" duration="2677000" />
+      <workItem from="1512836352254" duration="20366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181752000" />
+    <option name="totallyTimeSpent" value="199441000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36383602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -285,7 +364,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27287066" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32492113" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -313,22 +392,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/controllers/AuthTerapeutaController.js" />
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.ts" />
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-terapeuta.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/OrganizacionClass.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -443,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-organizacion.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-estudiante.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -457,31 +513,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/Servicios/terapeuta.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="67" column="71" lean-forward="false" selection-start-line="67" selection-start-column="71" selection-end-line="67" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/TerapeutaClass.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/ver-t/ver-t.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -489,20 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1189">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/ver-t/ver-t.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-64">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -517,6 +539,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -528,13 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -542,39 +558,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="87" column="51" lean-forward="true" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="14" column="104" lean-forward="false" selection-start-line="14" selection-start-column="104" selection-end-line="14" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -597,24 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="75" column="136" lean-forward="false" selection-start-line="75" selection-start-column="136" selection-end-line="75" selection-end-column="136" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -642,6 +611,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/controllers/AuthOrganizacionController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/policies/sessionAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Back-End/DB_Juegos_Web/config/policies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-439">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/models/Estudiante.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-19">
@@ -650,10 +643,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Back-End/DB_Juegos_Web/api/controllers/AuthOrganizacionController.js">
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+        <state relative-caret-position="204">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Servicios/Autenticacion/auth-organizacion.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/eliminar-t/eliminar-t.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/eliminar-t/eliminar-t.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#77#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/Servicios/terapeuta.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="62" column="16" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Modelos/TerapeutaClass.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/agregar-t/agregar-t.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="46" column="30" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/adm-principal/adm-principal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/gestion-terapeuta.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/assets/Estilos/estilosGenerales.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="176" column="3" lean-forward="true" selection-start-line="176" selection-start-column="3" selection-end-line="176" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Juegos-Web/src/app/Componentes/Gestion_Usuarios(Org)/gestion-terapeuta/pop-up/ver-t/ver-t.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
           <folding />
         </state>
       </provider>

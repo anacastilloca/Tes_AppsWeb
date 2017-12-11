@@ -1,86 +1,83 @@
 <!--MODAL para Agregar registro de un Terapeuta-->
-<div class="modal fade" id="agregarModal" role="dialog">
+<div class="modal fade" id="agregarModal" role="dialog" data-backdrop="static">
   <div class="modal-dialog">
 
     <!--Contenido del modal-->
     <div class="modal-content">
       <div class="modal-header">
-        <button class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Ingreso de Datos Personales del Terapeuta</h4>
       </div>
       <div class="modal-body">
-        <form #terapeutaFormulario="ngForm" >
+        <div class="alert alert-danger" *ngIf="!status">
+         La cédula ya existe
+        </div>
+
+        <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
           <label class="user">La cédula es el usuario</label>
           <div class="form-group">
-            <p>
-              <label class="lbl">Cédula:</label>
-              <input class="inp" required maxlength="10"
-                     placeholder="Ingrese la cédula" name="cedulaTerapeuta" type="text"
-                     [(ngModel)]="terapeutaNuevo.cedula"
-                     #cedulaTerapeuta="ngModel"
-              />
-              <span *ngIf="!cedulaTerapeuta.valid && cedulaTerapeuta.touched" class="alert alert-danger">
-                   La cédula es obligatoria
-              </span>
-            </p>
-            <p>
-              <label class="lbl">Nombre:</label>
-              <input class="inp" required maxlength="60"
-                     placeholder="Ingrese el nombre" name="nombreTerapeuta" type="text"
-                     [(ngModel)]="terapeutaNuevo.nombre"
-                     #nombreTerapeuta="ngModel"
-              />
-              <span *ngIf="!nombreTerapeuta.valid && nombreTerapeuta.touched" class="alert alert-danger">
-                El nombre es obligatorio
-              </span>
-            </p>
-            <p>
-              <label class="lbl">Contraseña:</label>
-              <input class="inp" required minlength="5" maxlength="15"
-                     placeholder="Ingrese la contraseña" name="contraseniaTerapeuta" type="password"
-                     [(ngModel)]="terapeutaNuevo.contrasenia"
-                     #contraseniaTerapeuta="ngModel"
-              />
-              <span *ngIf="!contraseniaTerapeuta.valid && contraseniaTerapeuta.touched && !contraseniaTerapeuta.minLength">
-                      <br>La contraseña es obligatoria y debe tener más de 5 caracteres
-                  </span>
-            </p>
-            <p>
-              <label class="lbl">Correo:</label>
-              <input class="inp" required maxlength="30"
-                     placeholder="Ingrese el correo" name="correoTerapeuta" type="email"
-                     [(ngModel)]="terapeutaNuevo.correo"
-                     #correoTerapeuta="ngModel"
-              >
-              <span *ngIf="!correoTerapeuta.valid && contraseniaTerapeuta.touched">
-                      El correo es incorrecto
-                  </span>
-            </p>
-            <p>
-              <label class="lbl">Dirección:</label>
-              <input class="inp" required minlength="60"
-                     placeholder="Ingrese la dirección" name="direccionTerapeuta" type="text"
-                     [(ngModel)]="terapeutaNuevo.direccion"
-                     #direccionTerapeuta="ngModel"
-              >
-            </p>
-            <p>
-              <label class="lbl">Celular:</label>
-              <input class="inp" required maxlength="10"
-                     placeholder="Ingrese el celular" name="celularTerapeuta" type="text"
-                     [(ngModel)]="terapeutaNuevo.celular"
-                     #celularTerapeuta="ngModel"
-              >
-            </p>
+            <label class="lbl">Cédula:</label>
+            <input class="inp" required maxlength="10"
+                   placeholder="Ingrese la cédula" name="cedulaTerapeuta" type="text"
+                   [(ngModel)]="terapeutaNuevo.cedula"
+                   #cedulaTerapeuta="ngModel"
+            />
+            <div *ngIf="!cedulaTerapeuta.valid && cedulaTerapeuta.touched" class="alert alert-danger">
+              La cédula es obligatoria
+            </div>
+            <label class="lbl">Nombre:</label>
+            <input class="inp" required maxlength="60"
+                   placeholder="Ingrese el nombre" name="nombreTerapeuta" type="text"
+                   [(ngModel)]="terapeutaNuevo.nombre"
+                   #nombreTerapeuta="ngModel"
+            />
+            <div *ngIf="!nombreTerapeuta.valid && nombreTerapeuta.touched" class="alert alert-danger">
+              El nombre es obligatorio
+            </div>
 
-            <button class="btn btn-primary" type="submit" (click)="agregarTerapeuta(); terapeutaFormulario.reset()" data-dismiss="modal">Crear usuario</button>
+            <label class="lbl">Contraseña:</label>
+            <input class="inp" required minlength="5" maxlength="15"
+                   placeholder="Ingrese la contraseña" name="contraseniaTerapeuta" type="password"
+                   [(ngModel)]="terapeutaNuevo.contrasenia"
+                   #contraseniaTerapeuta="ngModel"
+            />
+            <div *ngIf="!contraseniaTerapeuta.valid && contraseniaTerapeuta.touched && !contraseniaTerapeuta.minLength"
+                 role="alert">
+              <br>La contraseña es obligatoria y debe tener más de 5 caracteres
+            </div>
+
+
+            <label class="lbl">Correo:</label>
+            <input class="inp" required maxlength="30"
+                   placeholder="Ingrese el correo" name="correoTerapeuta" type="email"
+                   [(ngModel)]="terapeutaNuevo.correo"
+                   #correoTerapeuta="ngModel"
+            >
+            <div *ngIf="!correoTerapeuta.valid && contraseniaTerapeuta.touched" role="alert">
+              <br> El correo es incorrecto
+            </div>
+
+            <label class="lbl">Dirección:</label>
+            <input class="inp" maxlength="60"
+                   placeholder="Ingrese la dirección" name="direccionTerapeuta" type="text"
+                   [(ngModel)]="terapeutaNuevo.direccion"
+                   #direccionTerapeuta="ngModel"
+            >
+
+            <label class="lbl">Celular:</label>
+            <input class="inp" maxlength="10"
+                   placeholder="Ingrese el celular" name="celularTerapeuta" type="text"
+                   [(ngModel)]="terapeutaNuevo.celular"
+                   #celularTerapeuta="ngModel"
+            >
+
+            <button class="btn btn-primary" type="submit" [disabled]="!registerForm.valid">Crear usuario</button>
 
           </div>
         </form>
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+        <button type="button" class="btn btn-default" (click)="registerForm.reset()" data-dismiss="modal">Salir</button>
       </div>
 
     </div>

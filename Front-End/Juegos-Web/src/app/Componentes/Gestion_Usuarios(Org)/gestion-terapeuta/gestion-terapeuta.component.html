@@ -12,7 +12,7 @@
         Agregar
       </button>
     </div>
-    <app-agregar-t (agregarTerapeutaFrontEnd)="modalAgregarActualizarFrontEnd($event)"> </app-agregar-t>
+    <app-agregar-t (agregarTerapeutaFrontEnd)="actualizarTablaAgregar($event)"> </app-agregar-t>
   </div>
 
   <div class="table-responsive">
@@ -23,7 +23,6 @@
         <th>Cédula</th>
         <th>Nombre</th>
         <th>Celular</th>
-        <th>Correo</th>
         <th>Acciones</th>
       </tr>
       </thead>
@@ -33,7 +32,6 @@
         <td>{{tera.cedula}}</td>
         <td>{{tera.nombre}}</td>
         <td>{{tera.celular}}</td>
-        <td>{{tera.correo}}</td>
         <td>
           <button class="btn btn-info btn-sm" data-toggle="modal" (click)="modalVer(indice)" data-target="#verModal"
                   title="Ver información">
@@ -56,7 +54,7 @@
     </table>
     <app-ver-t [terapeuta]="terapeuta" ></app-ver-t>
     <!--<app-editar-pop-up [terapeuta]="terapeuta"></app-editar-pop-up>-->
-    <!--<app-eliminar-pop-up [terapeuta]="terapeuta" (eliminarTerapeutas)="presentacionActualizadaEliminar($event)"></app-eliminar-pop-up>-->
+    <app-eliminar-t [terapeuta]="terapeuta" (eliminarTerapeutas)="actualizarTablaEliminar($event)"></app-eliminar-t>
   </div>
 
 

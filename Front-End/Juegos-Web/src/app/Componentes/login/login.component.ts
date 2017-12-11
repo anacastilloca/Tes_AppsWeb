@@ -66,6 +66,7 @@ export class LoginComponent implements OnInit {
         .map(res => res.json())
         .subscribe(
           token=>{
+            localStorage.setItem('token', this._tokenService.token)
             this._tokenService.token=token.token;
             this._tokenService.idOTE=token.idTerapeuta.toString();
             this._tokenService.nombreOTE=token.nombreTerapeuta;

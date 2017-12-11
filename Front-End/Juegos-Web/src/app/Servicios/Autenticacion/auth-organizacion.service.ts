@@ -22,4 +22,11 @@ export class AuthOrganizacionService {
     return this._http.post(this.url+metodo, datosEnviar)
   }
 
+  getToken(){
+    let token=localStorage.getItem('token');
+    if(token != 'undefined'){
+
+    }
+  }
+
 }

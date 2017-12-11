@@ -3,7 +3,7 @@ body{
 }
 
 .btn{
-  margin: 1% 0 1% 0;
+  margin: 2% 0 1% 0;
   font-size: 16px;
 }
 
@@ -70,7 +70,6 @@ body{
 }
 
 .table-responsive{
-  margin: 1% 10% 2% 10%;
   height: 600px;
   overflow-y: auto;
 }
@@ -147,38 +146,40 @@ body{
     font-size: 18px;
   }
   .table>tbody>tr>td{
-    font-size: 16px;
+    font-size: 17px;
+  }
+  .table-responsive{
+    margin: 1% 10% 2% 10%;
   }
 }
 
 @media(max-width:992px ) {
   .inp {
-    font-size: 16px;
+    font-size: 17px;
   }
   .lbl{
-    font-size: 16px;
+    font-size: 17px;
   }
   .table>thead>tr>th{
     font-size: 17px;
   }
   .table>tbody>tr>td{
-    font-size: 15px;
+    font-size: 16px;
   }
-
 }
 
 @media(max-width:768px ) {
   .inp {
-    font-size: 14px;
+    font-size: 16px;
   }
   .lbl{
-    font-size: 14px;
+    font-size: 16px;
   }
   .table>thead>tr>th{
     font-size: 16px;
   }
   .table>tbody>tr>td{
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 

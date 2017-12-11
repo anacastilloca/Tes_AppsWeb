@@ -18,9 +18,9 @@ export class AdmPrincipalComponent implements OnInit {
   }
 
   ngOnInit() {
-   // console.log(this._tokenService.token);
-   // console.log(this._tokenService.idOTE);
-    //console.log(this._tokenService.nombreOTE);
+  // console.log(this._tokenService.token);
+  // console.log(this._tokenService.idOTE);
+   //console.log(this._tokenService.nombreOTE);
   }
 
   logOut(){
