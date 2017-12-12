@@ -8,6 +8,7 @@ import {TerapeutaClass} from "../../../../../Modelos/TerapeutaClass";
 })
 export class VerTComponent implements OnInit {
 
+  //Para obtener el registro a presentar
   @Input() terapeuta:TerapeutaClass;
 
   constructor() { }

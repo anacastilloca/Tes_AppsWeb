@@ -1,3 +1,109 @@
-<p>
-  editar-e works!
-</p>
+<!--MODAL para editar el registro de un Estudiante-->
+<div class="modal fade" id="editarModal" role="dialog" data-backdrop="static">
+  <div class="modal-dialog">
+
+    <!--Contenido del modal-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Actualizar Datos Personales del Estudiante</h4>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-success" *ngIf="status">
+          Datos actualizados correctamente
+        </div>
+
+        <div class="alert alert-danger" *ngIf="!status">
+          Los datos no se actualizaron
+        </div>
+
+        <form #editForm="ngForm" (ngSubmit)="onSubmit(editForm)">
+          <label class="user">La cédula es el usuario</label>
+          <div class="form-group">
+            <label class="lbl">Cédula:</label>
+            <input class="inp" required maxlength="10"
+                   placeholder="Ingrese la cédula" name="cedulaEstudiante" type="text"
+                   [(ngModel)]="estudiante.cedula"
+                   #cedulaEstudiante="ngModel"
+            />
+            <div *ngIf="!cedulaEstudiante.valid && cedulaEstudiante.touched" class="alert alert-danger">
+              La cédula es obligatoria
+            </div>
+
+            <label class="lbl">Nombre:</label>
+            <input class="inp" required maxlength="60"
+                   placeholder="Ingrese el nombre" name="nombreEstudiante" type="text"
+                   [(ngModel)]="estudiante.nombre"
+                   #nombreEstudiante="ngModel"
+            />
+            <div *ngIf="!nombreEstudiante.valid && nombreEstudiante.touched" class="alert alert-danger">
+              El nombre es obligatorio
+            </div>
+
+            <label class="lbl">Edad:</label>
+            <input class="inp" maxlength="2"
+                   placeholder="Ingrese la edad" name="edadEstudiante" type="text"
+                   [(ngModel)]="estudiante.edad"
+                   #edadEstudiante="ngModel"
+            >
+
+            <label class="lbl">Contraseña:</label>
+            <input class="inp" required minlength="5"
+                   placeholder="Ingrese la contraseña" name="contraseniaEstudiante" type="password"
+                   [(ngModel)]="estudiante.contrasenia"
+                   #contraseniaEstudiante="ngModel"
+            />
+            <div
+              *ngIf="!contraseniaEstudiante.valid && contraseniaEstudiante.touched && !contraseniaEstudiante.minLength"
+              class="alert alert-danger">
+              La contraseña es obligatoria y debe tener más de 5 caracteres
+            </div>
+
+            <label class="lbl">Asignar Terapeuta:</label>
+            <select [(ngModel)]="estudiante.idTerapeuta" name="terapeutaSeleccionado" class="inp">
+              <option value="" disabled selected>Actual - {{estudiante.idTerapeuta['nombre']}}</option>
+              <option *ngFor="let tera of terapeutas" [value]="tera.id">
+                {{tera.nombre}}
+              </option>
+            </select>
+
+            <h3 class="tituloModal">&nbsp;&nbsp;Datos del Representante</h3>
+            <label class="lbl">Nombre:</label>
+            <input class="inp" required maxlength="60"
+                   placeholder="Ingrese el nombre" name="nombreRepresentante" type="text"
+                   [(ngModel)]="estudiante.nombreRepresentante"
+                   #nombreRepresentante="ngModel"
+            />
+            <div *ngIf="!nombreRepresentante.valid && nombreRepresentante.touched" class="alert alert-danger">
+              El nombre es obligatorio
+            </div>
+
+            <label class="lbl">Celular:</label>
+            <input class="inp" maxlength="10"
+                   placeholder="Ingrese el celular" name="celularRepresentante" type="text"
+                   [(ngModel)]="estudiante.celularRepresentante"
+                   #celularRepresentante="ngModel"
+            >
+            <div *ngIf="celularRepresentante.touched" class="alert alert-danger">
+              El celular es obligatorio
+            </div>
+
+            <label class="lbl">Dirección:</label>
+            <input class="inp" maxlength="60"
+                   placeholder="Ingrese la dirección" name="direccionRepresentante" type="text"
+                   [(ngModel)]="estudiante.direccionRepresentante"
+                   #direccionRepresentante="ngModel"
+            >
+
+            <button class="btn btn-primary" type="submit" [disabled]="!editForm.valid">Actualizar</button>
+
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -218,3 +218,12 @@ body{
 .text-warning{
   font-size: 16px;
 }
+
+/*Para titulos del modal*/
+.tituloModal{
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-left: 13px;
+}

@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
               private _authTerapeuta: AuthTerapeutaService,
               private _authEstudiante: AuthEstudianteService,
               private _router: Router) {
-    console.log('perrp')
+   // console.log('perrp')
   }
 
   ngOnInit() {

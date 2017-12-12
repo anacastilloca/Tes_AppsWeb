@@ -1,3 +1,65 @@
-<p>
-  ver-e works!
-</p>
+<!--MODAL para presentar los datos de un Estudiante-->
+<div class="modal fade" id="verModal" role="dialog" data-backdrop="static">
+  <div class="modal-dialog">
+
+    <!--Contenido del modal-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Datos Personales del Estudiante</h4>
+      </div>
+      <div class="modal-body">
+         <form #registerForm="ngForm">
+          <label class="user">La cédula es el usuario</label>
+          <div class="form-group">
+            <label class="lbl">Cédula:</label>
+            <input class="inp" name="cedulaEstudiante" type="text"
+                   [(ngModel)]="estudiante.cedula" disabled
+            />
+
+            <label class="lbl">Nombre:</label>
+            <input class="inp" name="nombreEstudiante" type="text"
+                   [(ngModel)]="estudiante.nombre" disabled
+            />
+
+            <label class="lbl">Edad:</label>
+            <input class="inp" name="edadEstudiante" type="text"
+                   [(ngModel)]="estudiante.edad" disabled
+            >
+
+            <label class="lbl">Contraseña:</label>
+            <input class="inp" name="contraseniaEstudiante" type="password"
+                   [(ngModel)]="estudiante.contrasenia" disabled
+            />
+
+            <label class="lbl">Terapeuta:</label>
+            <input class="inp" name="terapeutaDelEstudiante" type="text"
+                   [(ngModel)]="nombreTerapeuta" disabled
+            />
+
+            <h1 class="tituloModal">Datos del Representante</h1>
+            <label class="lbl">Nombre:</label>
+            <input class="inp" name="nombreRepresentante" type="text"
+                   [(ngModel)]="estudiante.nombreRepresentante" disabled
+            />
+
+            <label class="lbl">Celular:</label>
+            <input class="inp" name="celularRepresentante" type="text"
+                   [(ngModel)]="estudiante.celularRepresentante" disabled
+            >
+
+            <label class="lbl">Dirección:</label>
+            <input class="inp" name="direccionRepresentante" type="text"
+                   [(ngModel)]="estudiante.direccionRepresentante" disabled
+            >
+
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+      </div>
+
+    </div>
+  </div>
+</div>

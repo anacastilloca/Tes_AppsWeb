@@ -20,11 +20,13 @@ export class TerapeutaService {
               private _urlPrincipal:UrlPrincipalService) {
     this.url=this._urlPrincipal.url+this.modelo;
     this.headers= new Headers();
-    console.log('Servicio terapeuta',this._tokenService.token)
+    //console.log('Servicio terapeuta',this._tokenService.token)
     this.headers.append('Authorization','Bearer'+this._tokenService.token)
   }
 
-  //Método para ingresar un nuevo registro de terapeuta
+  /**METODOS**/
+
+  //Para ingresar un nuevo registro de terapeuta
   agregarTerapeuta(terapeuta:TerapeutaClass){
     //console.log(terapeuta)
     let datosEnviar={
@@ -42,7 +44,7 @@ export class TerapeutaService {
       })
   }
 
-  //Método para actualizar los datos de un terapeuta
+  //Para actualizar los datos de un terapeuta
   editarTerapeuta(terapeuta:TerapeutaClass){
     let datosEnviar={
       cedula:terapeuta.cedula,
@@ -52,24 +54,24 @@ export class TerapeutaService {
       direccion:terapeuta.direccion,
       celular:terapeuta.celular
     };
-    return this._http.put(this.url+`/${terapeuta.id}`,datosEnviar)
+    return this._http.put(this.url+`/${terapeuta.id}`,datosEnviar,{headers:this.headers})
       .map(res =>{
         return res.json();
       })
   }
 
-  //Método para eliminar un registro de Terapeuta
+  //Para eliminar un registro de Terapeuta
   eliminarTerapeuta(terapeuta:TerapeutaClass){
-    return this._http.delete(this.url+`/${terapeuta.id}`).
+    return this._http.delete(this.url+`/${terapeuta.id}`,{headers:this.headers}).
       map(res=>{
         return res.json()
     })
   }
 
-  //Método para presentar el listado de los terapeutas por organizacion
+  //Para presentar el listado de los terapeutas por organizacion
   listarTerapeutasPorOrganizacion(idOrganizacion:string){
     return this._http
-      .get(this.url+'?idOrganizacion='+`${idOrganizacion}`)
+      .get(this.url+`?idOrganizacion=${idOrganizacion}`,{headers:this.headers})
       .map(res => {
         return res.json()
       })

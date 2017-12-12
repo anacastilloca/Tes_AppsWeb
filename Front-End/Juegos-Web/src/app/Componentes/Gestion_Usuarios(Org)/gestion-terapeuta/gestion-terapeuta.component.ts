@@ -21,14 +21,13 @@ export class GestionTerapeutaComponent implements OnInit {
 
   constructor(private _terapeutaService:TerapeutaService, private _tokenService:TokenService) { }
 
+  //Metodo para realizar la presentación de todos los registros de los terapeutas
   ngOnInit() {
     this._terapeutaService.listarTerapeutasPorOrganizacion(this._tokenService.idOTE)
       .subscribe(
         (terapeutas:TerapeutaClass[]) => {
-          //localStorage.setItem('terapeutas',JSON.stringify(terapeutas))
           this.terapeutas = terapeutas.map(
             (terapeuta:TerapeutaClass)=>{
-              terapeuta.editar = false;
               return terapeuta;
             }
           );
@@ -39,27 +38,31 @@ export class GestionTerapeutaComponent implements OnInit {
       )
   }
 
+  //Metodo para obtener un valor desde el componente agregar mediante Output y EventEmitter
   actualizarTablaAgregar(evento){
     //console.log(evento)
     this.terapeutas.push(evento);
   }
 
+  //Metodo para enviar datos al componente editar mediante Input
   modalEditar(indice){
     this.terapeuta=this.terapeutas[indice]
   }
 
+  //Metodo para enviar datos al componente eliminar mediante Input
   modalEliminar(indice){
     this.terapeuta=this.terapeutas[indice];
   }
 
+  //Metodo para obtener un valor desde el componente elimianr mediante Output y EventEmitter
   actualizarTablaEliminar(evento){
     let indice = this.terapeutas.indexOf(evento);
     this.terapeutas.splice(indice,1);
   }
 
+  //Metodo para enviar datos al componente ver mediante Input
   modalVer(indice){
     this.terapeuta=this.terapeutas[indice];
   }
-
 
 }

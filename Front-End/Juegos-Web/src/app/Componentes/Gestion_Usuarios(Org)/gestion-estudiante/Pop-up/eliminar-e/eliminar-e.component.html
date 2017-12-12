@@ -1,3 +1,21 @@
-<p>
-  eliminar-e works!
-</p>
+<!--Eliminar registro de un estudiante-->
+<div id="eliminarModal" class="modal fade" role="dialog" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Confirmación</h4>
+      </div>
+
+      <div class="modal-body">
+        <p class="preguntaEliminar">¿Está seguro que desea eliminar el registro de <strong>{{estudiante.nombre}}</strong>?</p>
+        <p class="text-warning"><small>Al presionar Sí, el registro se eliminará permanentemente</small></p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-default" id="btnSi" (click)="eliminarEstudiante()" data-dismiss="modal">Sí</button>
+        <button class="btn btn-default" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>

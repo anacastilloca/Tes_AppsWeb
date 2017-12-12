@@ -15,7 +15,7 @@ export class EliminarTComponent implements OnInit {
   @Input() terapeuta:TerapeutaClass;
 
   //Para actualizar el arreglo del frontend (tabla) de los registros existentes
-  @Output() eliminarTerapeutas = new EventEmitter();
+  @Output()  actualizacionTablaTerapeutas = new EventEmitter();
 
   constructor(private _terapeutaService:TerapeutaService) { }
 
@@ -27,7 +27,7 @@ export class EliminarTComponent implements OnInit {
     this._terapeutaService.eliminarTerapeuta(this.terapeuta)
       .subscribe(
         ingreso => {
-          this.eliminarTerapeutas.emit(this.terapeuta)
+          this.actualizacionTablaTerapeutas.emit(this.terapeuta)
         },
         error => {
           console.log("Error",error);
