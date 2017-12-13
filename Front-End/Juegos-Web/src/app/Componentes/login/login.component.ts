@@ -50,8 +50,8 @@ export class LoginComponent implements OnInit {
         .map(res => res.json())
         .subscribe(
           token=>{
-            localStorage.setItem('tokenOrganizacion', token.token);
-            localStorage.setItem('idOTE',token.idOrganizacion.toString());
+            localStorage.setItem('token', token.token);
+            localStorage.setItem('idOTE',token.idOrganizacion);
             localStorage.setItem('nombreOTE',token.nombreOrganizacion);
             this._router.navigate(['adm/terapeuta']);
             this.estaLogeado=true;
@@ -60,17 +60,17 @@ export class LoginComponent implements OnInit {
             this.estaLogeado=false;
 
           });
-    }else if (!this.usersSeleccionado.localeCompare("Terapeuta")){
-      //console.log("Es terapeuta");
+    }else
+      if (!this.usersSeleccionado.localeCompare("Terapeuta")){
+      console.log("Es terapeuta");
       this._authTerapeuta.logIn(this.ruc_cedula,this.contrasenia)
         .map(res => res.json())
         .subscribe(
           token=>{
-            //this._tokenService.token=token.token;
-           // localStorage.setItem('tokenTerapeuta', this._tokenService.token);
-            //this._tokenService.idOTE=token.idTerapeuta.toString();
-           // this._tokenService.nombreOTE=token.nombreTerapeuta;
-            this._router.navigate(['saca/sa']);
+            localStorage.setItem('token', token.token);
+            localStorage.setItem('idOTE',token.idTerapeuta);
+            localStorage.setItem('nombreOTE',token.nombreTerapeuta);
+            this._router.navigate(['admSACA/sa']);
             this.estaLogeado=true;
           },
           errorServidor=>{

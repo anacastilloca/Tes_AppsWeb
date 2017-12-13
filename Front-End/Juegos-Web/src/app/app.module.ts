@@ -16,7 +16,8 @@ import {AuthEstudianteService} from "./Servicios/Autenticacion/auth-estudiante.s
 import {TokenService} from "./Componentes/login/Token/token.service";
 
 //Importar los modulos
-import {AdmModule} from "./Componentes/Gestion_Usuarios(Org)/adm-principal/adm.module";
+import {AdmUsuariosModule} from "./Componentes/Gestion_Usuarios(Org)/adm-principal/adm-usuarios.module";
+import {AdmSaCaModule} from "./Componentes/Gestion_SA_CA(Tera)/adm-principal/adm-sa-ca.module";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {AdmModule} from "./Componentes/Gestion_Usuarios(Org)/adm-principal/adm.m
     FormsModule,
     HttpModule,
     rutas,
-    AdmModule
+    AdmUsuariosModule,
+    AdmSaCaModule
   ],
   providers: [
     appRoutingProviders,

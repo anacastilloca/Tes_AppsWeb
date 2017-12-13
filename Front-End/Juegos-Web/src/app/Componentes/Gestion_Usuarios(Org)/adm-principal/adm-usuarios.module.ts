@@ -56,4 +56,4 @@ import {TerapeutaService} from "../Servicios/terapeuta.service";
   ]
 })
 
-export class AdmModule{}
+export class AdmUsuariosModule{}

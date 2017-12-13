@@ -227,3 +227,10 @@ body{
   margin-top: 2%;
   margin-left: 13px;
 }
+
+/**Para las imagenes de SA */
+.imagenSA{
+  max-width: 100%;
+  height: 30%;
+}
+

@@ -14,7 +14,7 @@ export class AdmPrincipalComponent implements OnInit {
   //Para obtener el nombre de la organización
   nombreOrganizacion:string;
 
-  constructor(private _tokenService:TokenService, private _authOrg:AuthOrganizacionService) {
+  constructor(private _tokenService:TokenService) {
    // this._tokenService.token=localStorage.getItem('idOTE');
     //this._tokenService.idOTE=localStorage.getItem('tokenOrganizacion');
    // this._tokenService.nombreOTE=localStorage.getItem('nombreOTE');

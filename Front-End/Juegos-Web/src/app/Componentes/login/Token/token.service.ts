@@ -13,7 +13,7 @@ export class TokenService{
   constructor() {
 
     this.idOTE=localStorage.getItem('idOTE');
-    this.token=localStorage.getItem('tokenOrganizacion');
+    this.token=localStorage.getItem('token');
     this.nombreOTE=localStorage.getItem('nombreOTE')
   }
 
