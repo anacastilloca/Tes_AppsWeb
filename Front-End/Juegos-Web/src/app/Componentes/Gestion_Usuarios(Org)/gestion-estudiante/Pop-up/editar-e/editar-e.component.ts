@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, DoCheck, Input, OnInit} from '@angular/core';
 import {EstudianteClass} from "../../../../../Modelos/EstudianteClass";
 import {EstudianteService} from "../../../Servicios/estudiante.service";
 import {TerapeutaService} from "../../../Servicios/terapeuta.service";
@@ -10,7 +10,7 @@ import {TokenService} from "../../../../login/Token/token.service";
   templateUrl: './editar-e.component.html',
   styleUrls: ['./editar-e.component.css']
 })
-export class EditarEComponent implements OnInit {
+export class EditarEComponent implements OnInit, DoCheck {
 
   /**ATRIBUTOS**/
 
@@ -23,7 +23,7 @@ export class EditarEComponent implements OnInit {
   //Para obtener la lista de terapeutas
   terapeutas:TerapeutaClass[];
 
-
+  nombreTerapeuta:string;
 
   constructor(private _estudianteService:EstudianteService,
               private _terapeutaService:TerapeutaService,
@@ -43,6 +43,12 @@ export class EditarEComponent implements OnInit {
           console.log("Error: ",error)
         }
       )
+  }
+
+  ngDoCheck(){
+  //  this.nombreTerapeuta=this.estudiante.idTerapeuta;
+    //console.log(this.estudiante.idTerapeuta)
+   // console.log(this.estudiante.idTerapeuta['nombre'])
   }
 
   onSubmit(){

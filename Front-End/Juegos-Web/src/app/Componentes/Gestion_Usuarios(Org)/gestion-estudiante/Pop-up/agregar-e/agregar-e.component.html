@@ -71,12 +71,12 @@
             </div>
 
             <label class="lbl">Celular:</label>
-            <input class="inp" maxlength="10"
+            <input class="inp" maxlength="10" required
                    placeholder="Ingrese el celular" name="celularRepresentante" type="text"
                    [(ngModel)]="estudianteNuevo.celularRepresentante"
                    #celularRepresentante="ngModel"
             >
-            <div *ngIf="celularRepresentante.touched" class="alert alert-danger">
+            <div *ngIf="celularRepresentante.errors?.required && celularRepresentante.touched" class="alert alert-danger">
                 El celular es obligatorio
             </div>
 
