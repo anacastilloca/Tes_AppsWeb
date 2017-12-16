@@ -12,7 +12,7 @@
         Agregar
       </button>
     </div>
-    <app-agregar-e (agregarEstudianteFrontEnd)="actualizarTablaAgregar($event)"> </app-agregar-e>
+    <app-agregar-e (agregarEstudianteFrontEnd)="actualizarTablaAgregar($event)"></app-agregar-e>
   </div>
 
   <div class="table-responsive">
@@ -55,7 +55,7 @@
       </tbody>
     </table>
     <div *ngIf="llamadoModal"><app-ver-e [estudiante]="estudiante" ></app-ver-e></div>
-    <div *ngIf="llamadoModal"><app-editar-e [estudiante]="estudiante"></app-editar-e></div>
+    <div *ngIf="llamadoModal"><app-editar-e [estudiantePrincipal]="estudiante"></app-editar-e></div>
 
     <app-eliminar-e [estudiante]="estudiante" (actualizacionTablaEstudiante)="actualizarTablaEliminar($event)"></app-eliminar-e>
   </div>

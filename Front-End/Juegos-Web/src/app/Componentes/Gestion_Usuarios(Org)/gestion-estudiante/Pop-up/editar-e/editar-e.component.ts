@@ -1,4 +1,4 @@
-import {Component, DoCheck, Input, OnInit} from '@angular/core';
+import {Component, DoCheck, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {EstudianteClass} from "../../../../../Modelos/EstudianteClass";
 import {EstudianteService} from "../../../Servicios/estudiante.service";
 import {TerapeutaService} from "../../../Servicios/terapeuta.service";
@@ -15,7 +15,11 @@ export class EditarEComponent implements OnInit, DoCheck {
   /**ATRIBUTOS**/
 
   //Para obtener el registroa editar
-  @Input() estudiante: EstudianteClass;
+  @Input() estudiantePrincipal: EstudianteClass;
+  @Output() estudianteActualizado = new EventEmitter();
+
+  estudiante:EstudianteClass;
+
 
   //Para validar la actualización de los datos
   status:boolean;
@@ -25,9 +29,18 @@ export class EditarEComponent implements OnInit, DoCheck {
 
   nombreTerapeuta:string;
 
+  contrasenias:any;
+
+  actulizacionC:boolean;
+
   constructor(private _estudianteService:EstudianteService,
               private _terapeutaService:TerapeutaService,
-              private _tokenService:TokenService) { }
+              private _tokenService:TokenService) {
+
+    this.contrasenias={}
+
+    this.estudiante = Object.assign({}, this.estudiantePrincipal)
+  }
 
   ngOnInit() {
     this._terapeutaService.listarTerapeutasPorOrganizacion(this._tokenService.idOTE)
@@ -56,10 +69,32 @@ export class EditarEComponent implements OnInit, DoCheck {
       .subscribe(
         res=>{
           this.status=true;
+          this.estudianteActualizado.emit(this.estudiante);
         },
         err=>{
           this.status=false;
         })
   }
 
+  actualizarContrasenia(contraseniaForm){
+    this._estudianteService.actualizarContraseniaEst(this.estudiante.cedula,this.contrasenias.antigua,this.contrasenias.nueva)
+      .subscribe(
+        res=>{
+              this.actulizacionC=true;
+              this.estudiante.contrasenia=this.contrasenias.nueva;
+              contraseniaForm.reset();
+        }, err=>{
+          this.actulizacionC=false;
+        }
+      )
+  }
+
+  salir(){
+    this.actulizacionC = undefined;
+    this.status=undefined;
+  }
+
+  datos() {
+    alert(JSON.stringify(this.estudiante));
+  }
 }

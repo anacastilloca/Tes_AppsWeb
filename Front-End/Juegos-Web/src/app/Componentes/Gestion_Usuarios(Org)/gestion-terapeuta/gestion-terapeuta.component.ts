@@ -19,6 +19,8 @@ export class GestionTerapeutaComponent implements OnInit {
   terapeuta:TerapeutaClass= new TerapeutaClass("");
   terapeutas:TerapeutaClass[]=[];
 
+  llamadoModal:boolean;
+
   constructor(private _terapeutaService:TerapeutaService, private _tokenService:TokenService) { }
 
   //Metodo para realizar la presentación de todos los registros de los terapeutas
@@ -62,6 +64,7 @@ export class GestionTerapeutaComponent implements OnInit {
 
   //Metodo para enviar datos al componente ver mediante Input
   modalVer(indice){
+    this.llamadoModal=true;
     this.terapeuta=this.terapeutas[indice];
   }
 

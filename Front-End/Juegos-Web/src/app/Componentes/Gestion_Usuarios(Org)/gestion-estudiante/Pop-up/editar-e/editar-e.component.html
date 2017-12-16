@@ -7,18 +7,20 @@
       <div class="modal-header">
         <h4 class="modal-title">Actualizar Datos Personales del Estudiante</h4>
       </div>
+
       <div class="modal-body">
         <div class="alert alert-success" *ngIf="status">
           Datos actualizados correctamente
         </div>
 
-        <div class="alert alert-danger" *ngIf="!status">
+        <div class="alert alert-danger" *ngIf="status === false">
           Los datos no se actualizaron
         </div>
 
-        <form #editForm="ngForm" (ngSubmit)="onSubmit(editForm)">
+        <form #editForm="ngForm" (ngSubmit)="onSubmit()">
           <label class="user">La cédula es el usuario</label>
           <div class="form-group">
+
             <label class="lbl">Cédula:</label>
             <input class="inp" required maxlength="10"
                    placeholder="Ingrese la cédula" name="cedulaEstudiante" type="text"
@@ -46,18 +48,6 @@
                    #edadEstudiante="ngModel"
             >
 
-            <label class="lbl">Contraseña:</label>
-            <input class="inp" required minlength="5"
-                   placeholder="Ingrese la contraseña" name="contraseniaEstudiante" type="password"
-                   [(ngModel)]="estudiante.contrasenia"
-                   #contraseniaEstudiante="ngModel"
-            />
-            <div
-              *ngIf="!contraseniaEstudiante.valid && contraseniaEstudiante.touched && !contraseniaEstudiante.minLength"
-              class="alert alert-danger">
-              La contraseña es obligatoria y debe tener más de 5 caracteres
-            </div>
-
             <label class="lbl">Asignar Terapeuta:</label>
             <select [(ngModel)]="estudiante.idTerapeuta" name="terapeutaSeleccionado" class="inp">
               <option value="" disabled selected>Actual - {{estudiante.idTerapeuta['nombre']}}</option>
@@ -78,12 +68,12 @@
             </div>
 
             <label class="lbl">Celular:</label>
-            <input class="inp" maxlength="10"
+            <input class="inp" required maxlength="10"
                    placeholder="Ingrese el celular" name="celularRepresentante" type="text"
                    [(ngModel)]="estudiante.celularRepresentante"
                    #celularRepresentante="ngModel"
             >
-            <div *ngIf="celularRepresentante.touched" class="alert alert-danger">
+            <div *ngIf="celularRepresentante.touched && !celularRepresentante.valid" class="alert alert-danger">
               El celular es obligatorio
             </div>
 
@@ -93,15 +83,51 @@
                    [(ngModel)]="estudiante.direccionRepresentante"
                    #direccionRepresentante="ngModel"
             >
-
             <button class="btn btn-primary" type="submit" [disabled]="!editForm.valid">Actualizar</button>
 
           </div>
         </form>
+
+        <div class="alert alert-success" *ngIf="actulizacionC">
+          La contraseña se actualizó correctamente
+        </div>
+
+        <div class="alert alert-danger" *ngIf="actulizacionC === false">
+          La contraseña no se actualizó
+        </div>
+
+        <form #contraseniaForm="ngForm">
+          <h2>Actualizar Contraseña</h2>
+          <label class="lbl">Contraseña Antigua:</label>
+          <input class="inp" required minlength="5" maxlength="15"
+                 placeholder="Ingrese la contraseña" name="contraseniaAntigua" type="password"
+                 [(ngModel)]="contrasenias.antigua"
+                 #contraseniaAntigua="ngModel"
+          />
+          <div
+            *ngIf="!contraseniaAntigua.valid && contraseniaAntigua.touched && !contraseniaAntigua.minLength"
+            class="alert alert-danger">
+            La contraseña no es válida, debe tener entre 5 y 15 caracteres
+          </div>
+
+          <label class="lbl">Contraseña Nueva:</label>
+          <input class="inp" required minlength="5"
+                 placeholder="Ingrese la contraseña" name="contraseniaNueva" type="password"
+                 [(ngModel)]="contrasenias.nueva"
+                 #contraseniaNueva="ngModel"
+          />
+          <div
+            *ngIf="!contraseniaNueva.valid && contraseniaNueva.touched && !contraseniaNueva.minLength"
+            class="alert alert-danger">
+            La contraseña no es válida, debe tener entre 5 y 15 caracteres
+          </div>
+
+          <button (click)="actualizarContrasenia(contraseniaForm);" class="btn btn-primary" type="submit" [disabled]="!contraseniaForm.valid">Actualizar Contraseña</button>
+        </form>
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+        <button type="button" class="btn btn-default" (click)="salir()" data-dismiss="modal">Salir</button>
       </div>
 
     </div>

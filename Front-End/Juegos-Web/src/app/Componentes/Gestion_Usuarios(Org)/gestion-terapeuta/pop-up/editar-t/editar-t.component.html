@@ -12,8 +12,8 @@
           Datos actualizados correctamente
         </div>
 
-        <div class="alert alert-danger" *ngIf="!status">
-          Los datos no se actualizaron
+        <div class="alert alert-danger" *ngIf="status === false ">
+          Los datos no se actualizaron ddd
         </div>
 
         <form #editForm="ngForm" (ngSubmit)="onSubmit()">

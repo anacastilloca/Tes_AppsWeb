@@ -14,7 +14,7 @@ export class EditarTComponent implements OnInit {
   //Para obtener el registro de terapeuta a actualizar
   @Input() editarterapeuta:TerapeutaClass;
 
-  status:boolean=false;
+  status:boolean;
 
   constructor(private _terapeutaService: TerapeutaService) { }
 

@@ -77,5 +77,20 @@ export class EstudianteService {
       })
   }
 
+  //Para actualizar la contraseña
+  actualizarContraseniaEst(cedula:string,contraseniaAntigua:string, contraseniaNueva:string){
+    let metodo='/actualizacionContrasenia';
+    let datosEnviar ={
+      cedula:cedula,
+      contrasenia:contraseniaAntigua,
+      contraseniaNueva:contraseniaNueva
+    }
+    return this._http.put(this.url+metodo,datosEnviar)
+      .map(res=>{
+        return res.json();
+      })
+
+  }
+
 
 }
