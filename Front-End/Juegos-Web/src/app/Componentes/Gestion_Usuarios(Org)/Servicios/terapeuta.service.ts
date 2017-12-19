@@ -77,4 +77,18 @@ export class TerapeutaService {
       })
   }
 
+
+  //Para actualizar la contraseña
+  actualizarContraseniaTera(cedula:string,contraseniaAntigua:string, contraseniaNueva:string){
+    let metodo='/actualizacionContrasenia';
+    let datosEnviar ={
+      cedula:cedula,
+      contrasenia:contraseniaAntigua,
+      contraseniaNueva:contraseniaNueva
+    }
+    return this._http.put(this.url+metodo,datosEnviar)
+      .map(res=>{
+        return res.json();
+      })
+  }
 }

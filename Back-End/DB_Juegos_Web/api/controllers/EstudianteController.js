@@ -23,7 +23,6 @@ module.exports = {
             }
             //console.log(user)
             if (userEncontrado) {
-
               Passwords.checkPassword({
                 passwordAttempt: user.contrasenia,
                 encryptedPassword: userEncontrado.contrasenia
@@ -54,10 +53,7 @@ module.exports = {
     } else {
       return resp.json(200, {mjs: 'Parametros no validos'})
     }
-
-
   }
-
 
 };
 
