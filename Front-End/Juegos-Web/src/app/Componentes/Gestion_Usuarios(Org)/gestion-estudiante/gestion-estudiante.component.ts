@@ -51,6 +51,12 @@ export class GestionEstudianteComponent implements OnInit {
     this.estudiante=this.estudiantes[indice]
   }
 
+
+  //Ojo esto se agrego
+  datosEstudianteAcutuales(evento){
+    this.estudiantes.indexOf(evento);
+  }
+
   //Metodo para enviar datos al componente eliminar mediante Input
   modalEliminar(indice){
     this.estudiante=this.estudiantes[indice];
