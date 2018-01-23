@@ -4,6 +4,7 @@ import {EstudianteService} from "../../../Servicios/estudiante.service";
 import {TerapeutaService} from "../../../Servicios/terapeuta.service";
 import {TerapeutaClass} from "../../../../../Modelos/TerapeutaClass";
 import {TokenService} from "../../../../login/Token/token.service";
+import {forEach} from "@angular/router/src/utils/collection";
 
 @Component({
   selector: 'app-editar-e',
@@ -25,9 +26,11 @@ export class EditarEComponent implements OnInit, DoCheck {
   status:boolean;
 
   //Para obtener la lista de terapeutas
-  terapeutas:TerapeutaClass[];
+  terapeutas:TerapeutaClass[]=[];
+  //nombreTerapeuta:String="Nom"
+  listaTerapeutas:String[];
 
-  nombreTerapeuta:string;
+  nombreTerapeuta:string="Terapeutas";
 
   contrasenias:any;
 
@@ -37,17 +40,21 @@ export class EditarEComponent implements OnInit, DoCheck {
               private _terapeutaService:TerapeutaService,
               private _tokenService:TokenService) {
 
-    this.contrasenias={}
+    this.contrasenias={};
+    this.listaTerapeutas=[];
 
-    this.estudiante = Object.assign({}, this.estudiantePrincipal)
-  }
+    this.estudiante = Object.assign({}, this.estudiantePrincipal);
 
-  ngOnInit() {
     this._terapeutaService.listarTerapeutasPorOrganizacion(this._tokenService.idOTE)
       .subscribe(
         (terapeutas:TerapeutaClass[]) => {
           this.terapeutas = terapeutas.map(
             (terapeuta:TerapeutaClass)=>{
+
+              this.listaTerapeutas.push(terapeuta.nombre);
+
+              //console.log("Lista de terapeutas", terapeuta.nombre);
+
               return terapeuta;
             }
           );
@@ -55,7 +62,18 @@ export class EditarEComponent implements OnInit, DoCheck {
         error=>{
           console.log("Error: ",error)
         }
-      )
+      );
+
+    console.log(this.listaTerapeutas[0]);
+
+  }
+
+  ngOnInit() {
+    console.log("hola");
+    console.log(this.listaTerapeutas[0]);
+
+    console.log("adios");
+
   }
 
   ngDoCheck(){
@@ -88,6 +106,7 @@ export class EditarEComponent implements OnInit, DoCheck {
         }
       )
   }
+
 
   salir(){
     this.actulizacionC = undefined;

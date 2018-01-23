@@ -54,6 +54,7 @@ export class GestionEstudianteComponent implements OnInit {
 
   //Ojo esto se agrego
   datosEstudianteAcutuales(evento){
+    this.llamadoModal=true;
     this.estudiantes.indexOf(evento);
   }
 
