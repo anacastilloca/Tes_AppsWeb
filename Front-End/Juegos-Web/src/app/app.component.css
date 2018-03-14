@@ -1,7 +1,13 @@
+.line-Header{
+  height: 4px;
+  background-color: #77cc6d;
+  display: block;
+  margin-top: 0;
+
+}
+
 #img-Encabezado{
-  width: 90%;
-  height: auto;
-  margin: 2% 0 3% 0;
+  margin-left: -10%;
 }
 
 #encabezadoTituloySub{
@@ -9,56 +15,70 @@
 }
 
 #titulo-Encabezado{
-  font-size: 44px;
-  text-transform: uppercase;
-  margin: 5% 10% 0 0;
-}
+  font: 400 100px/1.3 'Arizonia', Helvetica, sans-serif;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+  font-size: 40px;
+  padding: 2%;
+  margin-left: -30%;
 
-@media(max-width: 1580px) {
-  #titulo-Encabezado {
-    font-size: 44px;
-  }
-}
-
-@media(max-width: 768px) {
-  #titulo-Encabezado {
-    font-size: 39px;
-  }
 }
 
 #subtitulo-Encabezado{
-  font-size: 120%;
-  margin: 2% 25% 4% 0;
+  font-size: 18px;
+  color: #656565;
+  text-align: center;
+  padding: 5%;
+
   position: relative;
   /* Safari 4.0 - 8.0 */
-  -webkit-animation: subtitulo 12s linear 2s infinite alternate;
+  -webkit-animation: subtitulo 4s linear 2s infinite alternate;
   /* Standard syntax */
-  animation: subtitulo 15s linear 2s infinite alternate;
+  animation: subtitulo 5s linear 2s infinite alternate;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes subtitulo {
   0%   {color:#1E1A2D; left:0; top:0;}
-  50%  {color:#524F7D; left:20%; top:0;}
+  100%  {color:#524F7D; left:15px; top:0;}
   100% {color:#1E1A2D; left:0; top:0;}
 }
 
 /* Standard syntax */
 @keyframes subtitulo {
   0%   {color:#1E1A2D; left:0; top:0;}
-  50%  {color:#524F7D; left:15%; top:0;}
+  50%  {color:#524F7D; left:15px; top:0;}
   100% {color:#1E1A2D; left:0; top:0;}
 }
 
+
+@media(max-width: 1580px) {
+  #titulo-Encabezado {
+    font-size: 40px;
+  }
+  #subtitulo-Encabezado{
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 768px) {
+  #titulo-Encabezado {
+    font-size: 37px;
+  }
+  #subtitulo-Encabezado{
+    font-size: 16px;
+  }
+}
+
 header{
-  background-image: linear-gradient(#F2C0BC,#FBECE9,#F2C0BC);
+ /* background-image: linear-gradient(#f8f8f8,#f8f8f8,#f8f8f8);*/
+  background: #f8f8f8 ;
   color: #1E1A2D;
-  padding: 0 5% 0 6%;
+
 }
 
 section{
-  background: #F3F2F5;
-  padding: 0 0 5% 0;
+  background: #fff;
+
 }
 
 .btn-default {
@@ -73,8 +93,14 @@ section{
 }
 
 footer{
-  padding: 1% 2% 0 2%;
-  color: white;
-  background: #0C0A0B;
-  font-size: 100%;
+  color: black;
+  background:#f8f8f8;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#title-footer{
+  font-size: 18px;
 }

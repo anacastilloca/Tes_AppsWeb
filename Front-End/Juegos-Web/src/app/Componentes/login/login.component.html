@@ -1,43 +1,60 @@
-<div class="container" id="login">
-  <h1 class="titulo">Iniciar Sesión</h1><br>
-  <div class="row" >
-    <div class="col-sm-3"></div>
-    <div id="loginBody" class="col-sm-6">
-      <label class="lblogin">Modo: </label>
-      <select [(ngModel)]="usersSeleccionado" name="usersSeleccionado" class="inplogin" (change)="onChange(usersSeleccionado)" tabindex="1">
-        <option *ngFor="let user of tipoUsers" [value]="user.rol">{{user.rol}}</option>
-      </select>
+<img src="assets/Imagenes/Login/fondo_login.jpg">
 
-      <label class="lblogin">Usuario:</label>
-      <input class="inplogin" required maxlength="13" minlength="10" type="text" name="user" tabindex="2"
-             [(ngModel)]="ruc_cedula" #user="ngModel" placeholder="Cédula o RUC "/>
+<button id="openModal" #openModal [hidden]="true"
+        data-toggle="modal" data-target="#loginModal"></button>
 
-      <div  *ngIf="user.touched && user.errors?.required" class="alert alert-warning"
-            role="alert">
-        <strong>¡Cuidado!</strong> Campo obligatorio
+<div class="modal fade" id="loginModal" role="dialog" data-backdrop="static">
+  <div class="modal-dialog" >
+
+    <!--Contenido del modal-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title"><span class="glyphicon glyphicon-lock"></span> Iniciar Sesión</h4>
       </div>
+      <div class="modal-body">
+        <div class="row">
+          <div id="loginBody" class="col-xs-12">
+            <label class="lblogin">Modo: </label>
+            <select [(ngModel)]="usersSeleccionado" name="usersSeleccionado" class="inplogin"
+                    (change)="onChange(usersSeleccionado)" tabindex="1">
+              <option *ngFor="let user of tipoUsers" [value]="user.rol">{{user.rol}}</option>
+            </select>
 
-      <div *ngIf="user.errors?.minlength && user.touched && !user.errors?.required" class="alert alert-warning" role="alert">
-        La cédula tiene 10 dígitos y el ruc 13.
-      </div>
+            <label class="lblogin">Usuario:</label>
+            <input class="inplogin" required maxlength="13" minlength="10" type="text" name="user" tabindex="2"
+                   [(ngModel)]="ruc_cedula" #user="ngModel" placeholder="Cédula o RUC "/>
 
-      <label class="lblogin">Contraseña: </label>
-      <input class="inplogin" required maxlength="16" type="password" name="pass"
-             [(ngModel)]="contrasenia" placeholder="Contraseña" #pass="ngModel" tabindex="3"/>
+            <div *ngIf="user.touched && user.errors?.required" class="alert alert-warning"
+                 role="alert">
+              <strong>¡Cuidado!</strong> Campo obligatorio
+            </div>
 
-      <div  *ngIf="pass.touched && pass.errors?.required" class="alert alert-warning"
-           role="alert">
-        <strong>¡Cuidado!</strong> La contraseña es obligatoria
-      </div>
+            <div *ngIf="user.errors?.minlength && user.touched && !user.errors?.required" class="alert alert-warning"
+                 role="alert">
+              La cédula tiene 10 dígitos y el ruc 13.
+            </div>
 
-      <button class="btn btn-primary" (click)="ingresarUsuario()" tabindex="4">Ingresar</button>
+            <label class="lblogin">Contraseña: </label>
+            <input class="inplogin" required maxlength="16" type="password" name="pass"
+                   [(ngModel)]="contrasenia" placeholder="Contraseña" #pass="ngModel" tabindex="3"/>
 
-      <div *ngIf="!estaLogeado" class="alert alert-danger">
-        El usuario o la contraseña son incorrectos
+            <div *ngIf="pass.touched && pass.errors?.required" class="alert alert-warning"
+                 role="alert">
+              <strong>¡Cuidado!</strong> La contraseña es obligatoria
+            </div>
+
+            <button id="btn-ingresar" class="btn btn-success" (click)="ingresarUsuario()" tabindex="4">
+              <span class="glyphicon glyphicon-off"></span> Ingresar</button>
+
+            <div *ngIf="!estaLogeado" class="alert alert-danger">
+              El usuario o la contraseña son incorrectos
+            </div>
+
+          </div>
+        </div>
       </div>
 
     </div>
-    <div class="col-sm-3"> </div>
   </div>
 </div>
 

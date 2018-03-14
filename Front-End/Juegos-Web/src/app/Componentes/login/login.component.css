@@ -1,33 +1,38 @@
-#login{
-  padding-top: 1%;
+.modal-header{
+  padding:30px 45px;
+  background: #77cc6d;
+  color: white;
 }
 
-#loginBody{
+.modal-body{
   text-align: center;
-  border: 1px solid #575757;
-  padding: 1%;
+  padding: 5% 2% 2% 2%;
+  background: #f8f8f8;
 }
 
 .lblogin{
-  background: #575757;
-  font-size: 130%;
-  color: #ffffff;
+  background: #F0F0F0;
+  font-size: 19px;
+  color: #000000;
   text-align: center;
   padding: 8px 0px 8px 0px;
-  width: 40%;
-  margin: 0 0 1% 0;
-  border: 1px solid;
+  width: 45%;
+  border: 1px solid #BFBFBF;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
 }
 
 .inplogin{
-  font-size: 130%;
-  padding: 8px 0 8px 0;
+  font-size: 18px;
+  padding: 10px 0 10px 0;
   width: 50%;
-  margin: 2% 0 0 0;
+  margin: 2% 0 0 1%;
   border: 1px solid #BFBFBF;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
+}
+
+#btn-ingresar{
+  margin-top: 5%;
 }
 

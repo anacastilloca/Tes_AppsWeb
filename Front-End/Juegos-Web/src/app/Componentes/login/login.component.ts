@@ -1,4 +1,4 @@
-import {Component, DoCheck, OnInit} from '@angular/core';
+import {Component, DoCheck, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {AuthOrganizacionService} from "../../Servicios/Autenticacion/auth-organizacion.service";
 import {AuthTerapeutaService} from "../../Servicios/Autenticacion/auth-terapeuta.service";
 import {AuthEstudianteService} from "../../Servicios/Autenticacion/auth-estudiante.service";
@@ -12,6 +12,7 @@ import {TokenService} from "./Token/token.service";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  @ViewChild('openModal') openModal:ElementRef;
 
   //**ATRIBUTOS**//
 
@@ -35,6 +36,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     //console.log(this._tokenService.nombreOTE);
+    this.openModal.nativeElement.click();
   }
 
    //Método que devuelve el usuario seleccionado
